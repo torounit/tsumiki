@@ -1,0 +1,27 @@
+{
+	"name": "tsumiki",
+	"private": true,
+	"engines": {
+		"node": ">=24"
+	},
+	"scripts": {
+		"start": "wp-playground-cli server --auto-mount --blueprint=.playground/blueprint.json",
+		"lint": "npm run lint:css && npm run lint:php && npm run lint:theme",
+		"lint:css": "stylelint \"**/*.css\"",
+		"lint:php": "composer run lint",
+		"lint:php:fix": "composer run format",
+		"lint:theme": "node bin/validate-theme.mjs",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@wordpress/stylelint-config": "^27.0.0",
+		"@wp-playground/cli": "^3.1.61",
+		"ajv": "^8.20.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^17.6.0",
+		"stylelint": "^17.16.0"
+	},
+	"allowScripts": {
+		"fs-ext-extra-prebuilt": false
+	}
+}
