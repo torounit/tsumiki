@@ -123,13 +123,13 @@
 			"fontFamilies": [
 				{
 					"fontFamily": "sans-serif",
-					"name": "Noto Sans JP",
-					"slug": "noto-sans-jp"
+					"name": "Sans-serif",
+					"slug": "sans-serif"
 				},
 				{
 					"fontFamily": "monospace",
-					"name": "Noto Sans Mono",
-					"slug": "noto-sans-mono"
+					"name": "Monospace",
+					"slug": "monospace"
 				}
 			],
 			"fontSizes": [
@@ -179,7 +179,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var:preset|font-family|noto-sans-jp",
+			"fontFamily": "var:preset|font-family|sans-serif",
 			"fontSize": "var:preset|font-size|medium",
 			"lineHeight": "1.75"
 		},
@@ -350,7 +350,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|noto-sans-mono",
+					"fontFamily": "var:preset|font-family|monospace",
 					"fontSize": "var:preset|font-size|small"
 				}
 			},
@@ -380,7 +380,7 @@
 					"text": "var:preset|color|accent-4"
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|noto-sans-mono",
+					"fontFamily": "var:preset|font-family|monospace",
 					"fontSize": "var:preset|font-size|small"
 				}
 			},
@@ -405,7 +405,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|noto-sans-mono",
+					"fontFamily": "var:preset|font-family|monospace",
 					"fontSize": "var:preset|font-size|small"
 				}
 			},
