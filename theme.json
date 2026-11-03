@@ -1,6 +1,36 @@
 {
 	"$schema": "https://schemas.wp.org/wp/7.2/theme.json",
 	"version": 3,
+	"settings": {
+		"border": {
+			"radius": true,
+			"radiusSizes": [
+				{
+					"name": "Small",
+					"slug": "small",
+					"size": "8px"
+				},
+				{
+					"name": "Medium",
+					"slug": "medium",
+					"size": "16px"
+				},
+				{
+					"name": "Large",
+					"slug": "large",
+					"size": "24px"
+				},
+				{
+					"name": "Full",
+					"slug": "full",
+					"size": "9999px"
+				}
+			]
+		},
+		"spacing": {
+			"blockGap": true
+		}
+	},
 	"templateParts": [
 		{
 			"area": "header",

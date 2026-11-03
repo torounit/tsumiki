@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.2/theme.json",
+	"version": 3,
+	"title": "Notched",
+	"slug": "notched",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"dimensions": {
+			"minHeight": "28rem"
+		},
+		"spacing": {
+			"blockGap": "0"
+		},
+		"blocks": {
+			"core/post-featured-image": {
+				"border": {
+					"radius": "var:preset|border-radius|large"
+				},
+				"spacing": {
+					"margin": {
+						"top": "0",
+						"bottom": "0"
+					}
+				}
+			},
+			"core/post-title": {
+				"typography": {
+					"fontSize": "1.25rem",
+					"fontWeight": "700"
+				}
+			},
+			"core/post-excerpt": {
+				"typography": {
+					"fontSize": "0.875rem",
+					"lineHeight": "1.75"
+				}
+			}
+		},
+		"css": "--r:var(--wp--preset--border-radius--large);display:grid;grid-template-columns:fit-content(60%) 1fr;grid-template-rows:1fr auto;position:relative;& > *{grid-area:2 / 1;margin:0}& > .wp-block-post-featured-image{position:static !important;clip-path:shape(from 0 -9999px, hline to 9999px, vline to 100%, hline to calc(100% + var(--r)), arc to 100% calc(100% - var(--r)) of var(--r) cw, vline to var(--r), arc to calc(100% - var(--r)) 0 of var(--r) ccw, hline to var(--r), arc to 0 calc(var(--r) * -1) of var(--r) cw, close)}& > .wp-block-post-featured-image img{position:absolute;inset:0;height:100%;object-fit:cover}& > :not(.wp-block-post-featured-image){padding:1.5rem 2.5rem 0 0}"
+	}
+}
