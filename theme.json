@@ -424,6 +424,10 @@
 						"top": "var:preset|spacing|60"
 					}
 				},
+				"typography": {
+					"fontSize": "var:preset|font-size|medium",
+					"lineHeight": "1.75"
+				},
 				"elements": {
 					"cite": {
 						"color": {
