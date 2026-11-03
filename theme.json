@@ -221,7 +221,7 @@
 				},
 				"typography": {
 					"fontSize": "var:preset|font-size|small",
-					"fontStyle": "normal"
+					"fontStyle": "italic"
 				}
 			},
 			"heading": {
@@ -423,10 +423,6 @@
 						"right": "var:preset|spacing|60",
 						"top": "var:preset|spacing|60"
 					}
-				},
-				"typography": {
-					"fontSize": "var:preset|font-size|x-large",
-					"lineHeight": "1.5"
 				},
 				"elements": {
 					"cite": {
