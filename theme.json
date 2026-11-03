@@ -174,8 +174,8 @@
 		"spacing": {
 			"blockGap": "var:preset|spacing|40",
 			"padding": {
-				"left": "clamp(var(--wp--preset--spacing--30), 7.37vw - 0.8rem, var(--wp--preset--spacing--70))",
-				"right": "clamp(var(--wp--preset--spacing--30), 7.37vw - 0.8rem, var(--wp--preset--spacing--70))"
+				"left": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40"
 			}
 		},
 		"typography": {
