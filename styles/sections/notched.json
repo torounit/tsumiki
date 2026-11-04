@@ -1,0 +1,71 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.2/theme.json",
+	"version": 3,
+	"title": "Notched",
+	"slug": "notched",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"dimensions": {
+			"aspectRatio": "var:preset|aspect-ratio|16-9"
+		},
+		"spacing": {
+			"blockGap": "0"
+		},
+		"blocks": {
+			"core/group": {
+				"spacing": {
+					"blockGap": "var:preset|spacing|20",
+					"padding": {
+						"right": "var:preset|spacing|40",
+						"top": "var:preset|spacing|40"
+					}
+				},
+				"@tablet": {
+					"spacing": {
+						"padding": {
+							"top": "var:preset|spacing|30"
+						}
+					}
+				},
+				"@mobile": {
+					"spacing": {
+						"padding": {
+							"top": "var:preset|spacing|30"
+						}
+					}
+				}
+			},
+			"core/post-title": {
+				"typography": {
+					"fontSize": "var:preset|font-size|x-large",
+					"lineHeight": "1.5"
+				},
+				"@tablet": {
+					"typography": {
+						"fontSize": "var:preset|font-size|medium"
+					}
+				},
+				"@mobile": {
+					"typography": {
+						"fontSize": "var:preset|font-size|medium"
+					}
+				}
+			}
+		},
+		"css": "--notch-columns:20;--notch-min-columns:4;--notch-share:0.4;",
+		"@tablet": {
+			"dimensions": {
+				"aspectRatio": "var:preset|aspect-ratio|square"
+			},
+			"css": "--notch-columns:6;--notch-min-columns:2;--notch-share:0.5;"
+		},
+		"@mobile": {
+			"dimensions": {
+				"aspectRatio": "var:preset|aspect-ratio|square"
+			},
+			"css": "--notch-columns:6;--notch-min-columns:2;--notch-share:0.5;"
+		}
+	}
+}

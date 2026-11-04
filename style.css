@@ -14,3 +14,77 @@ Tags: full-site-editing
 GitHub Theme URI: https://github.com/torounit/tsumiki
 Primary Branch: main
 */
+
+.is-style-notched {
+	--notch-radius: var(--wp--preset--border-radius--medium);
+	--notch-track: calc(100cqw + var(--wp--preset--spacing--40));
+	container-type: inline-size;
+	position: relative;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: minmax(12rem, 1fr) auto;
+
+	/* Defaults for the section style, which sets these per breakpoint and wins at any specificity. */
+	:where(&) {
+		--notch-columns: 20;
+		--notch-min-columns: 4;
+		--notch-share: 0.4;
+	}
+
+	> * {
+		grid-area: 2 / 1;
+	}
+
+	/*
+	 * The image box shares the grid cell with the notch text, so 100% in
+	 * shape() is the size of the notch, while the image itself fills the group.
+	 */
+	> .wp-block-post-featured-image {
+		position: static;
+		margin: 0;
+		clip-path:
+			shape(
+				from 0 -9999px,
+				hline to 9999px,
+				vline to 100%,
+				hline to calc(100% + var(--notch-radius)),
+				arc to 100% calc(100% - var(--notch-radius)) of var(--notch-radius) cw,
+				vline to var(--notch-radius),
+				arc to calc(100% - var(--notch-radius)) 0 of var(--notch-radius) ccw,
+				hline to var(--notch-radius),
+				arc to 0 calc(var(--notch-radius) * -1) of var(--notch-radius) cw,
+				close
+			);
+
+		img,
+		.components-placeholder {
+			position: absolute;
+			inset: 0;
+		}
+	}
+
+	/* Browsers without calc-size() keep the widest notch. */
+	> :not(.wp-block-post-featured-image) {
+		margin: 0;
+		min-width: calc(var(--notch-track) * var(--notch-min-columns) / var(--notch-columns));
+		width: calc(var(--notch-track) * var(--notch-share));
+		width:
+			calc-size(
+				fit-content,
+				min(
+					round(up, size, calc(var(--notch-track) / var(--notch-columns))),
+					calc(var(--notch-track) * var(--notch-share))
+				)
+			);
+	}
+
+	&:not(:has(> .wp-block-post-featured-image)) {
+		display: block;
+		aspect-ratio: auto;
+
+		> * {
+			min-width: 0;
+			width: auto;
+		}
+	}
+}
