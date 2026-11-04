@@ -311,6 +311,16 @@
 			}
 		},
 		"blocks": {
+			"core/accordion-item": {
+				"border": {
+					"radius": "var:preset|border-radius|medium"
+				}
+			},
+			"core/avatar": {
+				"border": {
+					"radius": "var:preset|border-radius|full"
+				}
+			},
 			"core/button": {
 				"variations": {
 					"outline": {
@@ -362,6 +372,9 @@
 						"right": "var:preset|spacing|40",
 						"top": "var:preset|spacing|40"
 					}
+				},
+				"border": {
+					"radius": "var:preset|border-radius|medium"
 				}
 			},
 			"core/details": {
@@ -382,7 +395,15 @@
 			},
 			"core/image": {
 				"border": {
-					"radius": "var:preset|border-radius|large"
+					"radius": "var:preset|border-radius|medium"
+				}
+			},
+			"core/media-text": {
+				"css": "& .wp-block-media-text__media img{border-radius:var(--wp--preset--border-radius--medium)}& .wp-block-media-text__media video{border-radius:var(--wp--preset--border-radius--medium)}"
+			},
+			"core/navigation-overlay-close": {
+				"border": {
+					"radius": "var:preset|border-radius|full"
 				}
 			},
 			"core/post-date": {
@@ -396,7 +417,7 @@
 			},
 			"core/post-featured-image": {
 				"border": {
-					"radius": "var:preset|border-radius|large"
+					"radius": "var:preset|border-radius|medium"
 				}
 			},
 			"core/preformatted": {
@@ -421,7 +442,7 @@
 			},
 			"core/pullquote": {
 				"border": {
-					"radius": "var:preset|border-radius|large"
+					"radius": "var:preset|border-radius|medium"
 				},
 				"color": {
 					"background": "var:preset|color|accent-1"
@@ -446,9 +467,12 @@
 					}
 				}
 			},
+			"core/query-pagination-numbers": {
+				"css": "& .page-numbers{border-radius:var(--wp--preset--border-radius--full)}"
+			},
 			"core/quote": {
 				"border": {
-					"radius": "var:preset|border-radius|large"
+					"radius": "var:preset|border-radius|medium"
 				},
 				"color": {
 					"background": "var:preset|color|accent-5"
@@ -473,6 +497,9 @@
 					"text": "var:preset|color|accent-6"
 				}
 			},
+			"core/site-logo": {
+				"css": "& img{border-radius:var(--wp--preset--border-radius--small)}"
+			},
 			"core/site-title": {
 				"typography": {
 					"fontSize": "var:preset|font-size|medium",
@@ -485,6 +512,14 @@
 						}
 					}
 				}
+			},
+			"core/tab-list": {
+				"border": {
+					"radius": "var:preset|border-radius|full"
+				}
+			},
+			"core/video": {
+				"css": "& video{border-radius:var(--wp--preset--border-radius--medium)}"
 			}
 		}
 	},
