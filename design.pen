@@ -1050,7 +1050,7 @@
               "fill": "$color-accent-4",
               "textGrowth": "fixed-width",
               "width": 816,
-              "content": "Notch a corner of the image to tuck in a caption. The inverse radius of the notch is $radius-large (24px). The notch snaps to the grid: it spans whole columns plus the gutter after them, so the image resumes at the next column. It hugs its text, up to half of the image's own columns — 10 of 20 for wide images, 6 of 12 for content images, 3 of 6 on mobile. Longer text wraps instead of widening the notch.",
+              "content": "Notch a corner of the image to tuck in a caption. The inverse radius of the notch is $radius-medium (16px); a notch under 32px tall uses half its height instead. The notch snaps to the grid: it spans whole columns plus the gutter after them, so the image resumes at the next column. Wide images take a fixed 8 of 20 columns. Content images hug their caption, up to 6 of 12. On mobile, both take 3 of 6. Longer text wraps instead of widening the notch. Text sits flush with the image's left and bottom edges, with $spacing-40 (24px) to its right. Above it, titles get $spacing-40 (24px) on desktop and $spacing-30 (16px) on mobile, and small captions get $spacing-20 (8px). A title and its date sit $spacing-20 (8px) apart.",
               "lineHeight": 1.75,
               "fontFamily": "$font-family-noto-sans-jp",
               "fontSize": 14,
@@ -1076,7 +1076,7 @@
                     "link": "https://unsplash.com/@brett_jordan",
                     "author": "Brett Jordan"
                   },
-                  "geometry": "M24 0h1328a24 24 0 0 1 24 24v392a24 24 0 0 1-24 24h-838a24 24 0 0 1-24-24v-32a24 24 0 0 0-24-24h-442a24 24 0 0 1-24-24v-312a24 24 0 0 1 24-24z",
+                  "geometry": "M16 0h1344a16 16 0 0 1 16 16v408a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-48a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-328a16 16 0 0 1 16-16z",
                   "viewBox": [
                     0,
                     0,
@@ -1098,11 +1098,11 @@
                   "x": 0,
                   "y": 360,
                   "name": "Cutout",
-                  "width": 490,
+                  "width": 560,
                   "layout": "vertical",
                   "gap": 8,
                   "padding": [
-                    24,
+                    "$spacing-40",
                     "$spacing-40",
                     0,
                     0
@@ -2068,7 +2068,7 @@
                       "id": "p2GDWB",
                       "name": "Name",
                       "fill": "$color-contrast",
-                      "content": "Medium — Cards, thumbnails",
+                      "content": "Medium — Images, notches, cards",
                       "lineHeight": 1.75,
                       "fontFamily": "$font-family-noto-sans-jp",
                       "fontSize": 14,
@@ -2109,7 +2109,7 @@
                       "id": "Z4ckY",
                       "name": "Name",
                       "fill": "$color-contrast",
-                      "content": "Large — Images, notches",
+                      "content": "Large — Not used by default",
                       "lineHeight": 1.75,
                       "fontFamily": "$font-family-noto-sans-jp",
                       "fontSize": 14,
@@ -3256,7 +3256,7 @@
           "name": "Grid Overlay",
           "enabled": false,
           "width": 1376,
-          "height": 8443,
+          "height": 9097,
           "gap": "$spacing-40",
           "children": [
             {
@@ -3453,6 +3453,77 @@
               "children": [
                 {
                   "type": "frame",
+                  "id": "bTo9o",
+                  "name": "Breadcrumbs",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    0,
+                    "$spacing-40",
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Hk4St",
+                      "name": "ホーム",
+                      "fill": "$color-accent-4",
+                      "content": "ホーム",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "E95gZ",
+                      "name": "Separator",
+                      "fill": "$color-accent-4",
+                      "content": "/",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NNH7W",
+                      "name": "Blog",
+                      "fill": "$color-accent-4",
+                      "content": "Blog",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "HY80C",
+                      "name": "Separator",
+                      "fill": "$color-accent-4",
+                      "content": "/",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uG2IY",
+                      "name": "Uncategorized",
+                      "fill": "$color-accent-4",
+                      "content": "Uncategorized",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
                   "id": "dWGoi",
                   "name": "Post Terms",
                   "gap": 8,
@@ -3507,16 +3578,15 @@
                   ]
                 },
                 {
-                  "type": "frame",
-                  "id": "eSzr1",
-                  "name": "Featured Image",
+                  "id": "IEI2L",
+                  "type": "ref",
+                  "ref": "TzPrL",
+                  "name": "Post Card",
                   "width": "fill_container",
-                  "height": 640,
-                  "layout": "none",
-                  "children": [
-                    {
+                  "descendants": {
+                    "qv3Q5": {
                       "type": "path",
-                      "id": "yfVtF",
+                      "id": "bjlhs",
                       "x": 0,
                       "y": 0,
                       "name": "Image",
@@ -3526,7 +3596,7 @@
                         "link": "https://unsplash.com/@tokyokohaku",
                         "author": "Tokyo Kohaku"
                       },
-                      "geometry": "M24 0h1328a24 24 0 0 1 24 24v592a24 24 0 0 1-24 24h-838a24 24 0 0 1-24-24v-54a24 24 0 0 0-24-24h-442a24 24 0 0 1-24-24v-490a24 24 0 0 1 24-24z",
+                      "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
                       "viewBox": [
                         0,
                         0,
@@ -3542,58 +3612,18 @@
                       "width": 1376,
                       "height": 640
                     },
-                    {
-                      "type": "frame",
-                      "id": "LyCUX",
-                      "x": 0,
-                      "y": 538,
-                      "name": "Notch",
-                      "width": 490,
-                      "layout": "vertical",
-                      "gap": "$spacing-30",
-                      "padding": [
-                        "$spacing-40",
-                        "$spacing-40",
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "hFjW6",
-                          "name": "Post Title",
-                          "fill": "$color-contrast",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "WordPress ブロックのスタイル見本",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-x-large",
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "N6ZAwy",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "qQRJP",
-                              "name": "Post Date",
-                              "fill": "$color-accent-4",
-                              "content": "2026.10.15",
-                              "lineHeight": 1.875,
-                              "fontFamily": "$font-family-noto-sans-mono",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        }
-                      ]
+                    "EpVyi": {
+                      "width": 560,
+                      "y": 546,
+                      "x": 0
+                    },
+                    "l5H2FK": {
+                      "content": "WordPress ブロックのスタイル見本"
+                    },
+                    "w0jah": {
+                      "content": "2026.10.15"
                     }
-                  ]
+                  }
                 }
               ]
             },
@@ -4328,7 +4358,7 @@
                   "name": "Quote",
                   "width": "fill_container",
                   "fill": "$color-accent-5",
-                  "cornerRadius": "$radius-large",
+                  "cornerRadius": "$radius-medium",
                   "layout": "vertical",
                   "gap": "$spacing-20",
                   "padding": "$spacing-40",
@@ -4366,7 +4396,7 @@
                   "name": "Pullquote",
                   "width": "fill_container",
                   "fill": "$color-accent-1",
-                  "cornerRadius": "$radius-large",
+                  "cornerRadius": "$radius-medium",
                   "layout": "vertical",
                   "gap": "$spacing-30",
                   "padding": "$spacing-40",
@@ -4442,7 +4472,7 @@
                       "x": 0,
                       "y": 0,
                       "name": "Image",
-                      "geometry": "M24 0h768a24 24 0 0 1 24 24v544a24 24 0 0 1-24 24h-418a24 24 0 0 1-24-24v10a24 24 0 0 0-24-24h-302a24 24 0 0 1-24-24v-506a24 24 0 0 1 24-24z",
+                      "geometry": "M16 0h784a16 16 0 0 1 16 16v560a16 16 0 0 1-16 16h-435a15 15 0 0 1-15-15v0a15 15 0 0 0-15-15h-319a16 16 0 0 1-16-16v-530a16 16 0 0 1 16-16z",
                       "viewBox": [
                         0,
                         0,
@@ -4462,12 +4492,12 @@
                       "type": "frame",
                       "id": "Tio3m",
                       "x": 0,
-                      "y": 554,
+                      "y": 562,
                       "name": "Notch",
                       "width": 350,
                       "layout": "vertical",
                       "padding": [
-                        "$spacing-30",
+                        "$spacing-20",
                         "$spacing-40",
                         0,
                         0
@@ -4487,6 +4517,44 @@
                           "fontWeight": "normal"
                         }
                       ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WSu4H",
+                  "name": "Image - Plain",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$spacing-30",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LQbbK",
+                      "name": "Image",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 592,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MjUyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "cornerRadius": "$radius-medium"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NZPp6",
+                      "name": "Caption",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "画像ブロックのキャプション（small サイズ）",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -5481,7 +5549,7 @@
                                 "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MjUyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
                                 "mode": "cover"
                               },
-                              "cornerRadius": "$radius-large"
+                              "cornerRadius": "$radius-medium"
                             },
                             {
                               "type": "frame",
@@ -5496,7 +5564,7 @@
                                 "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
                                 "mode": "cover"
                               },
-                              "cornerRadius": "$radius-large"
+                              "cornerRadius": "$radius-medium"
                             },
                             {
                               "type": "frame",
@@ -5511,7 +5579,7 @@
                                 "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
                                 "mode": "cover"
                               },
-                              "cornerRadius": "$radius-large"
+                              "cornerRadius": "$radius-medium"
                             }
                           ]
                         },
@@ -5541,7 +5609,7 @@
                                 "url": "https://images.unsplash.com/photo-1571506562879-feb067e54235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
                                 "mode": "cover"
                               },
-                              "cornerRadius": "$radius-large"
+                              "cornerRadius": "$radius-medium"
                             },
                             {
                               "type": "frame",
@@ -5562,7 +5630,7 @@
                                 "url": "https://images.unsplash.com/photo-1658834047078-f2a029caaf17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
                                 "mode": "cover"
                               },
-                              "cornerRadius": "$radius-large"
+                              "cornerRadius": "$radius-medium"
                             },
                             {
                               "type": "frame",
@@ -5583,7 +5651,7 @@
                                 "url": "https://images.unsplash.com/photo-1633857594566-7a881cfe0885?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU4MjF8&ixlib=rb-4.1.0&q=80&w=1080",
                                 "mode": "cover"
                               },
-                              "cornerRadius": "$radius-large"
+                              "cornerRadius": "$radius-medium"
                             }
                           ]
                         }
@@ -5648,7 +5716,7 @@
                     },
                     "#1c191780"
                   ],
-                  "cornerRadius": "$radius-large",
+                  "cornerRadius": "$radius-medium",
                   "layout": "vertical",
                   "gap": "$spacing-30",
                   "padding": "$spacing-40",
@@ -5729,7 +5797,7 @@
                         "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
                         "mode": "cover"
                       },
-                      "cornerRadius": "$radius-large"
+                      "cornerRadius": "$radius-medium"
                     },
                     {
                       "type": "frame",
@@ -5759,7 +5827,7 @@
                           "fill": "$color-contrast",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "画像とテキストを横に並べます。画像は画像ブロックと同じ Large の角丸で、モバイルでは縦に積みます。",
+                          "content": "画像とテキストを横に並べます。画像は画像ブロックと同じ Medium の角丸で、モバイルでは縦に積みます。",
                           "lineHeight": 1.75,
                           "fontFamily": "$font-family-noto-sans-jp",
                           "fontSize": "$font-size-medium",
@@ -5996,7 +6064,7 @@
                         "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MjUyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
                         "mode": "cover"
                       },
-                      "cornerRadius": "$radius-large",
+                      "cornerRadius": "$radius-medium",
                       "justifyContent": "center",
                       "alignItems": "center",
                       "children": [
@@ -6056,7 +6124,7 @@
                   "name": "Author Biography",
                   "width": "fill_container",
                   "fill": "$color-accent-5",
-                  "cornerRadius": "$radius-large",
+                  "cornerRadius": "$radius-medium",
                   "gap": "$spacing-40",
                   "padding": "$spacing-40",
                   "children": [
@@ -6577,82 +6645,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "frame",
-              "id": "fJxpw",
-              "name": "Breadcrumbs",
-              "width": "fill_container",
-              "stroke": "$color-accent-6",
-              "strokeWidth": {
-                "top": 1
-              },
-              "strokeAlignment": "inner",
-              "gap": 8,
-              "padding": [
-                "$spacing-40",
-                0,
-                0,
-                0
-              ],
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "PD23F",
-                  "name": "ホーム",
-                  "fill": "$color-accent-4",
-                  "content": "ホーム",
-                  "lineHeight": 1.75,
-                  "fontFamily": "$font-family-noto-sans-jp",
-                  "fontSize": "$font-size-small",
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "TvzyJ",
-                  "name": "Separator",
-                  "fill": "$color-accent-5",
-                  "content": "/",
-                  "lineHeight": 1.75,
-                  "fontFamily": "$font-family-noto-sans-jp",
-                  "fontSize": "$font-size-small",
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "wGqta",
-                  "name": "Blog",
-                  "fill": "$color-accent-4",
-                  "content": "Blog",
-                  "lineHeight": 1.75,
-                  "fontFamily": "$font-family-noto-sans-jp",
-                  "fontSize": "$font-size-small",
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "FIWBl",
-                  "name": "Separator",
-                  "fill": "$color-accent-5",
-                  "content": "/",
-                  "lineHeight": 1.75,
-                  "fontFamily": "$font-family-noto-sans-jp",
-                  "fontSize": "$font-size-small",
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "jxJJq",
-                  "name": "WordPress",
-                  "fill": "$color-accent-4",
-                  "content": "Uncategorized",
-                  "lineHeight": 1.75,
-                  "fontFamily": "$font-family-noto-sans-jp",
-                  "fontSize": "$font-size-small",
-                  "fontWeight": "normal"
-                }
-              ]
             }
           ]
         },
@@ -6686,7 +6678,7 @@
           "name": "Grid Overlay",
           "enabled": false,
           "width": 342,
-          "height": 7737,
+          "height": 8055,
           "gap": "$spacing-40",
           "children": [
             {
@@ -6772,6 +6764,77 @@
               "children": [
                 {
                   "type": "frame",
+                  "id": "rA7nX",
+                  "name": "Breadcrumbs",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    0,
+                    "$spacing-40",
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kn4Al",
+                      "name": "ホーム",
+                      "fill": "$color-accent-4",
+                      "content": "ホーム",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Klftg",
+                      "name": "Separator",
+                      "fill": "$color-accent-4",
+                      "content": "/",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "q6Qy7E",
+                      "name": "Blog",
+                      "fill": "$color-accent-4",
+                      "content": "Blog",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EXcfJ",
+                      "name": "Separator",
+                      "fill": "$color-accent-4",
+                      "content": "/",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mmh2L",
+                      "name": "Uncategorized",
+                      "fill": "$color-accent-4",
+                      "content": "Uncategorized",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
                   "id": "TiDuR",
                   "name": "Post Terms",
                   "gap": 8,
@@ -6826,16 +6889,15 @@
                   ]
                 },
                 {
-                  "type": "frame",
-                  "id": "S8nT6",
-                  "name": "Featured Image",
+                  "id": "H9OT0O",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card",
                   "width": "fill_container",
-                  "height": 416,
-                  "layout": "none",
-                  "children": [
-                    {
+                  "descendants": {
+                    "wZwCB": {
                       "type": "path",
-                      "id": "pPuPk",
+                      "id": "CO9Ix",
                       "x": 0,
                       "y": 0,
                       "name": "Image",
@@ -6845,7 +6907,7 @@
                         "link": "https://unsplash.com/@tokyokohaku",
                         "author": "Tokyo Kohaku"
                       },
-                      "geometry": "M24 0h294a24 24 0 0 1 24 24v368a24 24 0 0 1-24 24h-111a24 24 0 0 1-24-24v-56a24 24 0 0 0-24-24h-135a24 24 0 0 1-24-24v-264a24 24 0 0 1 24-24z",
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v384a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-288a16 16 0 0 1 16-16z",
                       "viewBox": [
                         0,
                         0,
@@ -6861,58 +6923,17 @@
                       "width": 342,
                       "height": 416
                     },
-                    {
-                      "type": "frame",
-                      "id": "wJdbv",
-                      "x": 0,
-                      "y": 312,
-                      "name": "Notch",
+                    "vNPbE": {
                       "width": 183,
-                      "layout": "vertical",
-                      "gap": "$spacing-30",
-                      "padding": [
-                        "$spacing-30",
-                        "$spacing-40",
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "BHDxJ",
-                          "name": "Post Title",
-                          "fill": "$color-contrast",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "WordPress ブロックのスタイル見本",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-medium",
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "VqaDr",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "cGVfs",
-                              "name": "Post Date",
-                              "fill": "$color-accent-4",
-                              "content": "2026.10.15",
-                              "lineHeight": 1.875,
-                              "fontFamily": "$font-family-noto-sans-mono",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        }
-                      ]
+                      "y": 320
+                    },
+                    "FC9Ta": {
+                      "content": "WordPress ブロックのスタイル見本"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.15"
                     }
-                  ]
+                  }
                 }
               ]
             },
@@ -7663,7 +7684,7 @@
                   "name": "Quote",
                   "width": "fill_container",
                   "fill": "$color-accent-5",
-                  "cornerRadius": "$radius-large",
+                  "cornerRadius": "$radius-medium",
                   "layout": "vertical",
                   "gap": "$spacing-20",
                   "padding": "$spacing-40",
@@ -7701,7 +7722,7 @@
                   "name": "Pullquote",
                   "width": "fill_container",
                   "fill": "$color-accent-1",
-                  "cornerRadius": "$radius-large",
+                  "cornerRadius": "$radius-medium",
                   "layout": "vertical",
                   "gap": "$spacing-30",
                   "padding": "$spacing-40",
@@ -7777,7 +7798,7 @@
                       "x": 0,
                       "y": 0,
                       "name": "Image",
-                      "geometry": "M24 0h294a24 24 0 0 1 24 24v208a24 24 0 0 1-24 24h-111a24 24 0 0 1-24-24v-12a24 24 0 0 0-24-24h-135a24 24 0 0 1-24-24v-148a24 24 0 0 1 24-24z",
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v224a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-20a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-172a16 16 0 0 1 16-16z",
                       "viewBox": [
                         0,
                         0,
@@ -7797,12 +7818,12 @@
                       "type": "frame",
                       "id": "oNeq9",
                       "x": 0,
-                      "y": 196,
+                      "y": 204,
                       "name": "Notch",
                       "width": 183,
                       "layout": "vertical",
                       "padding": [
-                        "$spacing-30",
+                        "$spacing-20",
                         "$spacing-40",
                         0,
                         0
@@ -7822,6 +7843,44 @@
                           "fontWeight": "normal"
                         }
                       ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ejMxx",
+                  "name": "Image - Plain",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$spacing-30",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MfK45",
+                      "name": "Image",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 256,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MjUyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      },
+                      "cornerRadius": "$radius-medium"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BkBRH",
+                      "name": "Caption",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "画像ブロックのキャプション（small サイズ）",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -8818,7 +8877,7 @@
                                 "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MjUyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
                                 "mode": "cover"
                               },
-                              "cornerRadius": "$radius-large"
+                              "cornerRadius": "$radius-medium"
                             },
                             {
                               "type": "frame",
@@ -8833,7 +8892,7 @@
                                 "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
                                 "mode": "cover"
                               },
-                              "cornerRadius": "$radius-large"
+                              "cornerRadius": "$radius-medium"
                             }
                           ]
                         },
@@ -8857,7 +8916,7 @@
                                 "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
                                 "mode": "cover"
                               },
-                              "cornerRadius": "$radius-large"
+                              "cornerRadius": "$radius-medium"
                             },
                             {
                               "type": "frame",
@@ -8878,7 +8937,7 @@
                                 "url": "https://images.unsplash.com/photo-1518218475781-e68795a570d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU4MjB8&ixlib=rb-4.1.0&q=80&w=1080",
                                 "mode": "cover"
                               },
-                              "cornerRadius": "$radius-large"
+                              "cornerRadius": "$radius-medium"
                             }
                           ]
                         }
@@ -8943,7 +9002,7 @@
                     },
                     "#1c191780"
                   ],
-                  "cornerRadius": "$radius-large",
+                  "cornerRadius": "$radius-medium",
                   "layout": "vertical",
                   "gap": "$spacing-30",
                   "padding": "$spacing-40",
@@ -9026,7 +9085,7 @@
                         "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
                         "mode": "cover"
                       },
-                      "cornerRadius": "$radius-large"
+                      "cornerRadius": "$radius-medium"
                     },
                     {
                       "type": "frame",
@@ -9056,7 +9115,7 @@
                           "fill": "$color-contrast",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "画像とテキストを横に並べます。画像は画像ブロックと同じ Large の角丸で、モバイルでは縦に積みます。",
+                          "content": "画像とテキストを横に並べます。画像は画像ブロックと同じ Medium の角丸で、モバイルでは縦に積みます。",
                           "lineHeight": 1.75,
                           "fontFamily": "$font-family-noto-sans-jp",
                           "fontSize": "$font-size-medium",
@@ -9296,7 +9355,7 @@
                         "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MjUyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
                         "mode": "cover"
                       },
-                      "cornerRadius": "$radius-large",
+                      "cornerRadius": "$radius-medium",
                       "justifyContent": "center",
                       "alignItems": "center",
                       "children": [
@@ -9356,7 +9415,7 @@
                   "name": "Author Biography",
                   "width": "fill_container",
                   "fill": "$color-accent-5",
-                  "cornerRadius": "$radius-large",
+                  "cornerRadius": "$radius-medium",
                   "layout": "vertical",
                   "gap": "$spacing-30",
                   "padding": "$spacing-40",
@@ -9879,82 +9938,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "frame",
-              "id": "r7mfH",
-              "name": "Breadcrumbs",
-              "width": "fill_container",
-              "stroke": "$color-accent-6",
-              "strokeWidth": {
-                "top": 1
-              },
-              "strokeAlignment": "inner",
-              "gap": 8,
-              "padding": [
-                "$spacing-40",
-                0,
-                0,
-                0
-              ],
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "MQulh",
-                  "name": "ホーム",
-                  "fill": "$color-accent-4",
-                  "content": "ホーム",
-                  "lineHeight": 1.75,
-                  "fontFamily": "$font-family-noto-sans-jp",
-                  "fontSize": "$font-size-small",
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "W32QdX",
-                  "name": "Separator",
-                  "fill": "$color-accent-5",
-                  "content": "/",
-                  "lineHeight": 1.75,
-                  "fontFamily": "$font-family-noto-sans-jp",
-                  "fontSize": "$font-size-small",
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "D8lKP",
-                  "name": "Blog",
-                  "fill": "$color-accent-4",
-                  "content": "Blog",
-                  "lineHeight": 1.75,
-                  "fontFamily": "$font-family-noto-sans-jp",
-                  "fontSize": "$font-size-small",
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "J5WUG8",
-                  "name": "Separator",
-                  "fill": "$color-accent-5",
-                  "content": "/",
-                  "lineHeight": 1.75,
-                  "fontFamily": "$font-family-noto-sans-jp",
-                  "fontSize": "$font-size-small",
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "lcM1G",
-                  "name": "WordPress",
-                  "fill": "$color-accent-4",
-                  "content": "Uncategorized",
-                  "lineHeight": 1.75,
-                  "fontFamily": "$font-family-noto-sans-jp",
-                  "fontSize": "$font-size-small",
-                  "fontWeight": "normal"
-                }
-              ]
             }
           ]
         },
@@ -10076,8 +10059,8 @@
           "width": 1584,
           "fill": "$color-accent-5",
           "cornerRadius": [
-            "$radius-large",
-            "$radius-large",
+            "$radius-medium",
+            "$radius-medium",
             0,
             0
           ],
@@ -10201,6 +10184,196 @@
               "fontWeight": "normal"
             }
           ]
+        },
+        {
+          "type": "text",
+          "id": "HD2wD",
+          "name": "Label",
+          "fill": "$color-accent-4",
+          "content": "Component — Post Card",
+          "lineHeight": 1.75,
+          "fontFamily": "$font-family-noto-sans-mono",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "TzPrL",
+          "name": "Post Card",
+          "reusable": true,
+          "width": 1376,
+          "height": 640,
+          "layout": "none",
+          "children": [
+            {
+              "type": "path",
+              "id": "qv3Q5",
+              "x": 0,
+              "y": 0,
+              "name": "Image",
+              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+              "viewBox": [
+                0,
+                0,
+                1376,
+                640
+              ],
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "cover"
+              },
+              "width": 1376,
+              "height": 640
+            },
+            {
+              "type": "frame",
+              "id": "EpVyi",
+              "x": 0,
+              "y": 546,
+              "name": "Notch",
+              "width": 560,
+              "layout": "vertical",
+              "gap": "$spacing-20",
+              "padding": [
+                "$spacing-40",
+                "$spacing-40",
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "l5H2FK",
+                  "name": "Post Title",
+                  "fill": "$color-contrast",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "WordPress ブロックのスタイル見本",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-family-noto-sans-jp",
+                  "fontSize": "$font-size-x-large",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "TLu27",
+                  "name": "Post Meta",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w0jah",
+                      "name": "Post Date",
+                      "fill": "$color-accent-4",
+                      "content": "2026.10.15",
+                      "lineHeight": 1.875,
+                      "fontFamily": "$font-family-noto-sans-mono",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "JwLph",
+          "name": "Label",
+          "fill": "$color-accent-4",
+          "content": "Component — Post Card - Mobile",
+          "lineHeight": 1.75,
+          "fontFamily": "$font-family-noto-sans-mono",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "v05kjC",
+          "name": "Post Card - Mobile",
+          "reusable": true,
+          "width": 342,
+          "height": 416,
+          "layout": "none",
+          "children": [
+            {
+              "type": "path",
+              "id": "wZwCB",
+              "x": 0,
+              "y": 0,
+              "name": "Image",
+              "geometry": "M16 0h310a16 16 0 0 1 16 16v384a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-288a16 16 0 0 1 16-16z",
+              "viewBox": [
+                0,
+                0,
+                342,
+                416
+              ],
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "cover"
+              },
+              "width": 342,
+              "height": 416
+            },
+            {
+              "type": "frame",
+              "id": "vNPbE",
+              "x": 0,
+              "y": 320,
+              "name": "Notch",
+              "width": 183,
+              "layout": "vertical",
+              "gap": "$spacing-20",
+              "padding": [
+                "$spacing-30",
+                "$spacing-40",
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FC9Ta",
+                  "name": "Post Title",
+                  "fill": "$color-contrast",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "WordPress ブロックのスタイル見本",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-family-noto-sans-jp",
+                  "fontSize": "$font-size-medium",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "zPJw7",
+                  "name": "Post Meta",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "E1BZNk",
+                      "name": "Post Date",
+                      "fill": "$color-accent-4",
+                      "content": "2026.10.15",
+                      "lineHeight": 1.875,
+                      "fontFamily": "$font-family-noto-sans-mono",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -10244,6 +10417,77 @@
               "layout": "vertical",
               "gap": "$spacing-30",
               "children": [
+                {
+                  "type": "frame",
+                  "id": "vmaY1",
+                  "name": "Breadcrumbs",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    0,
+                    "$spacing-40",
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sUiH7",
+                      "name": "ホーム",
+                      "fill": "$color-accent-4",
+                      "content": "ホーム",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "L9VAI2",
+                      "name": "Separator",
+                      "fill": "$color-accent-4",
+                      "content": "/",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hXCDi",
+                      "name": "Blog",
+                      "fill": "$color-accent-4",
+                      "content": "Blog",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jmcPt",
+                      "name": "Separator",
+                      "fill": "$color-accent-4",
+                      "content": "/",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uGtFF",
+                      "name": "Journal",
+                      "fill": "$color-accent-4",
+                      "content": "Journal",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
                 {
                   "type": "text",
                   "id": "AZhH5",
@@ -10291,44 +10535,30 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "j4hbvj",
-                  "name": "Row",
+                  "id": "A6nOo",
+                  "name": "Post",
                   "width": "fill_container",
-                  "gap": "$spacing-40",
+                  "layout": "vertical",
+                  "gap": "$spacing-50",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "J2xXGi",
-                      "name": "Post Card",
+                      "id": "eggI9",
+                      "name": "Post Header",
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": "$spacing-30",
                       "children": [
                         {
                           "type": "frame",
-                          "id": "YXw50",
-                          "name": "Featured Image",
-                          "clip": true,
-                          "width": "fill_container",
-                          "height": 245,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MjUyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
-                            "mode": "cover"
-                          },
-                          "cornerRadius": "$radius-large"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "iCepj",
-                          "name": "Post Meta",
-                          "gap": 12,
+                          "id": "I09iF",
+                          "name": "Post Terms",
+                          "gap": 8,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "pqCtC",
+                              "id": "tk4ba",
                               "name": "Category Chip",
                               "fill": "$color-accent-1",
                               "cornerRadius": "$radius-full",
@@ -10339,397 +10569,90 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "f1KDg",
-                                  "name": "Category",
-                                  "fill": "$color-contrast",
-                                  "content": "Journal",
-                                  "lineHeight": 1.75,
-                                  "fontFamily": "$font-family-noto-sans-jp",
-                                  "fontSize": "$font-size-small",
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "text",
-                              "id": "R9c3Y2",
-                              "name": "Post Date",
-                              "fill": "$color-accent-4",
-                              "content": "2026.10.15",
-                              "lineHeight": 1.875,
-                              "fontFamily": "$font-family-noto-sans-mono",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "text",
-                          "id": "u9NgX",
-                          "name": "Post Title",
-                          "fill": "$color-contrast",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "積み木のように余白を重ねる",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-large",
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "JJjBI",
-                          "name": "Post Excerpt",
-                          "fill": "$color-accent-4",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "テーマの余白を 1 つのスケールで揃えると、ブロックを並べるだけでリズムが生まれます。",
-                          "lineHeight": 1.75,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "dgEu1",
-                      "name": "Post Card",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$spacing-30",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "I42NZz",
-                          "name": "Featured Image",
-                          "clip": true,
-                          "width": "fill_container",
-                          "height": 245,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-                            "mode": "cover"
-                          },
-                          "cornerRadius": "$radius-large"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "k3jSkt",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "pYXc3",
-                              "name": "Category Chip",
-                              "fill": "$color-accent-1",
-                              "cornerRadius": "$radius-full",
-                              "padding": [
-                                4,
-                                12
-                              ],
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "sFG92",
+                                  "id": "oH0hP",
                                   "name": "Category",
                                   "fill": "$color-contrast",
                                   "content": "Design",
-                                  "lineHeight": 1.75,
                                   "fontFamily": "$font-family-noto-sans-jp",
                                   "fontSize": "$font-size-small",
                                   "fontWeight": "normal"
                                 }
                               ]
-                            },
-                            {
-                              "type": "text",
-                              "id": "YOeCP",
-                              "name": "Post Date",
-                              "fill": "$color-accent-4",
-                              "content": "2026.10.14",
-                              "lineHeight": 1.875,
-                              "fontFamily": "$font-family-noto-sans-mono",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
                             }
                           ]
                         },
                         {
-                          "type": "text",
-                          "id": "XhIhY",
-                          "name": "Post Title",
-                          "fill": "$color-contrast",
-                          "textGrowth": "fixed-width",
+                          "id": "NAvlN",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card",
                           "width": "fill_container",
-                          "content": "角丸のスケールを決める",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-large",
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "PrPyI",
-                          "name": "Post Excerpt",
-                          "fill": "$color-accent-4",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "画像、カード、ボタンの角丸を 4 段階に絞りました。",
-                          "lineHeight": 1.75,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
+                          "descendants": {
+                            "qv3Q5": {
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-138a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-438a16 16 0 0 1 16-16z",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              }
+                            },
+                            "EpVyi": {
+                              "width": 560,
+                              "y": 470,
+                              "x": 0
+                            },
+                            "l5H2FK": {
+                              "content": "ブロックテーマの余白を theme.json で設計するときに、最初に決めておきたい 3 つのスケールについて"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.16"
+                            }
+                          }
                         }
                       ]
                     },
                     {
-                      "type": "frame",
-                      "id": "w4Is6",
-                      "name": "Post Card",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$spacing-30",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "fs5Ak",
-                          "name": "Featured Image",
-                          "clip": true,
-                          "width": "fill_container",
-                          "height": 245,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-                            "mode": "cover"
-                          },
-                          "cornerRadius": "$radius-large"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "ZUwkY",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "lvDZ2",
-                              "name": "Category Chip",
-                              "fill": "$color-accent-1",
-                              "cornerRadius": "$radius-full",
-                              "padding": [
-                                4,
-                                12
-                              ],
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "VwpqU",
-                                  "name": "Category",
-                                  "fill": "$color-contrast",
-                                  "content": "Design",
-                                  "lineHeight": 1.75,
-                                  "fontFamily": "$font-family-noto-sans-jp",
-                                  "fontSize": "$font-size-small",
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "text",
-                              "id": "hEPd6",
-                              "name": "Post Date",
-                              "fill": "$color-accent-4",
-                              "content": "2026.10.13",
-                              "lineHeight": 1.875,
-                              "fontFamily": "$font-family-noto-sans-mono",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "text",
-                          "id": "ZeDeq",
-                          "name": "Post Title",
-                          "fill": "$color-contrast",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "20 カラムのグリッド",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-large",
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "WsQDb",
-                          "name": "Post Excerpt",
-                          "fill": "$color-accent-4",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "コンテンツ幅をちょうど 12 カラムにする理由について。",
-                          "lineHeight": 1.75,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "KS3VU",
-                      "name": "Post Card",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$spacing-30",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "zZdDE",
-                          "name": "Featured Image",
-                          "metadata": {
-                            "type": "unsplash",
-                            "username": "nillufar",
-                            "link": "https://unsplash.com/@nillufar",
-                            "author": "nilufar nattaq"
-                          },
-                          "clip": true,
-                          "width": "fill_container",
-                          "height": 245,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "https://images.unsplash.com/photo-1655388506739-08eb029df45c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-                            "mode": "cover"
-                          },
-                          "cornerRadius": "$radius-large"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "JCuqT",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "z8dux",
-                              "name": "Category Chip",
-                              "fill": "$color-accent-1",
-                              "cornerRadius": "$radius-full",
-                              "padding": [
-                                4,
-                                12
-                              ],
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "p9XRH",
-                                  "name": "Category",
-                                  "fill": "$color-contrast",
-                                  "content": "Journal",
-                                  "lineHeight": 1.75,
-                                  "fontFamily": "$font-family-noto-sans-jp",
-                                  "fontSize": "$font-size-small",
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "text",
-                              "id": "ct3n1",
-                              "name": "Post Date",
-                              "fill": "$color-accent-4",
-                              "content": "2026.10.12",
-                              "lineHeight": 1.875,
-                              "fontFamily": "$font-family-noto-sans-mono",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "text",
-                          "id": "PhQF7",
-                          "name": "Post Title",
-                          "fill": "$color-contrast",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "ノッチ付きの画像",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-large",
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "dpRNy",
-                          "name": "Post Excerpt",
-                          "fill": "$color-accent-4",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "画像の角を切り欠いて、キャプションを収めます。",
-                          "lineHeight": 1.75,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
-                        }
-                      ]
+                      "type": "text",
+                      "id": "j8Txe",
+                      "name": "Post Excerpt",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": 816,
+                      "content": "余白、角丸、文字サイズを最初にスケールとして決めておくと、ブロックを並べるだけでページ全体のリズムが揃います。",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "Ezuis",
-                  "name": "Row",
+                  "id": "RsyaZ",
+                  "name": "Post",
                   "width": "fill_container",
-                  "gap": "$spacing-40",
+                  "layout": "vertical",
+                  "gap": "$spacing-50",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "ls46l",
-                      "name": "Post Card",
+                      "id": "hWRK1",
+                      "name": "Post Header",
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": "$spacing-30",
                       "children": [
                         {
                           "type": "frame",
-                          "id": "NCuhL",
-                          "name": "Featured Image",
-                          "metadata": {
-                            "type": "unsplash",
-                            "username": "zengyili",
-                            "link": "https://unsplash.com/@zengyili",
-                            "author": "ZENG YILI"
-                          },
-                          "clip": true,
-                          "width": "fill_container",
-                          "height": 245,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "https://images.unsplash.com/photo-1748959503729-8dcb7abd7559?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-                            "mode": "cover"
-                          },
-                          "cornerRadius": "$radius-large"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "H5OxIq",
-                          "name": "Post Meta",
-                          "gap": 12,
+                          "id": "xys53",
+                          "name": "Post Terms",
+                          "gap": 8,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "D3xj1",
+                              "id": "erI6S",
                               "name": "Category Chip",
                               "fill": "$color-accent-1",
                               "cornerRadius": "$radius-full",
@@ -10740,360 +10663,814 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "TCcbk",
-                                  "name": "Category",
-                                  "fill": "$color-contrast",
-                                  "content": "Research",
-                                  "lineHeight": 1.75,
-                                  "fontFamily": "$font-family-noto-sans-jp",
-                                  "fontSize": "$font-size-small",
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "text",
-                              "id": "h6KSf",
-                              "name": "Post Date",
-                              "fill": "$color-accent-4",
-                              "content": "2026.10.11",
-                              "lineHeight": 1.875,
-                              "fontFamily": "$font-family-noto-sans-mono",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "text",
-                          "id": "YLsL5",
-                          "name": "Post Title",
-                          "fill": "$color-contrast",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "和文の行間",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-large",
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "afsP2",
-                          "name": "Post Excerpt",
-                          "fill": "$color-accent-4",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "本文の行間を 1.75 にした理由と、見出しの行間について。",
-                          "lineHeight": 1.75,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "jpmIC",
-                      "name": "Post Card",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$spacing-30",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "iuCgK",
-                          "name": "Featured Image",
-                          "metadata": {
-                            "type": "unsplash",
-                            "username": "stepansarg",
-                            "link": "https://unsplash.com/@stepansarg",
-                            "author": "Stepan Sargsyan"
-                          },
-                          "clip": true,
-                          "width": "fill_container",
-                          "height": 245,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "https://images.unsplash.com/photo-1538645731800-4640c639bba7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3ODF8&ixlib=rb-4.1.0&q=80&w=1080",
-                            "mode": "cover"
-                          },
-                          "cornerRadius": "$radius-large"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "qnPKa",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "cpWtZ",
-                              "name": "Category Chip",
-                              "fill": "$color-accent-1",
-                              "cornerRadius": "$radius-full",
-                              "padding": [
-                                4,
-                                12
-                              ],
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "sBSHk",
-                                  "name": "Category",
-                                  "fill": "$color-contrast",
-                                  "content": "Research",
-                                  "lineHeight": 1.75,
-                                  "fontFamily": "$font-family-noto-sans-jp",
-                                  "fontSize": "$font-size-small",
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "text",
-                              "id": "jdVwI",
-                              "name": "Post Date",
-                              "fill": "$color-accent-4",
-                              "content": "2026.10.10",
-                              "lineHeight": 1.875,
-                              "fontFamily": "$font-family-noto-sans-mono",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "text",
-                          "id": "Je1zm",
-                          "name": "Post Title",
-                          "fill": "$color-contrast",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "デバイスフォントで組む",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-large",
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "O0pAn",
-                          "name": "Post Excerpt",
-                          "fill": "$color-accent-4",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Web フォントを読み込まずに、端末の Noto Sans を使います。",
-                          "lineHeight": 1.75,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "P5vWNJ",
-                      "name": "Post Card",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$spacing-30",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "f2vdW",
-                          "name": "Featured Image",
-                          "metadata": {
-                            "type": "unsplash",
-                            "username": "polarmermaid",
-                            "link": "https://unsplash.com/@polarmermaid",
-                            "author": "Anne Nygård"
-                          },
-                          "clip": true,
-                          "width": "fill_container",
-                          "height": 245,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "https://images.unsplash.com/photo-1651341508318-39601132a85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-                            "mode": "cover"
-                          },
-                          "cornerRadius": "$radius-large"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "wf9O8",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "nrd0z",
-                              "name": "Category Chip",
-                              "fill": "$color-accent-1",
-                              "cornerRadius": "$radius-full",
-                              "padding": [
-                                4,
-                                12
-                              ],
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "cA6nq",
-                                  "name": "Category",
-                                  "fill": "$color-contrast",
-                                  "content": "Design",
-                                  "lineHeight": 1.75,
-                                  "fontFamily": "$font-family-noto-sans-jp",
-                                  "fontSize": "$font-size-small",
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "text",
-                              "id": "st24t",
-                              "name": "Post Date",
-                              "fill": "$color-accent-4",
-                              "content": "2026.10.09",
-                              "lineHeight": 1.875,
-                              "fontFamily": "$font-family-noto-sans-mono",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "text",
-                          "id": "cFGvw",
-                          "name": "Post Title",
-                          "fill": "$color-contrast",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "色を 6 つに絞る",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-large",
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "yGTud",
-                          "name": "Post Excerpt",
-                          "fill": "$color-accent-4",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "白とストーンの中間色、それに木の色を 1 つだけ。",
-                          "lineHeight": 1.75,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "BbZf8",
-                      "name": "Post Card",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": "$spacing-30",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "QM5mq",
-                          "name": "Featured Image",
-                          "metadata": {
-                            "type": "unsplash",
-                            "username": "prateekkatyal",
-                            "link": "https://unsplash.com/@prateekkatyal",
-                            "author": "Prateek Katyal"
-                          },
-                          "clip": true,
-                          "width": "fill_container",
-                          "height": 245,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "https://images.unsplash.com/photo-1589178208772-6f239b7652e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-                            "mode": "cover"
-                          },
-                          "cornerRadius": "$radius-large"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "Ztuxs",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "E2lKJ",
-                              "name": "Category Chip",
-                              "fill": "$color-accent-1",
-                              "cornerRadius": "$radius-full",
-                              "padding": [
-                                4,
-                                12
-                              ],
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "VN1BO",
+                                  "id": "fEtZS",
                                   "name": "Category",
                                   "fill": "$color-contrast",
                                   "content": "Journal",
-                                  "lineHeight": 1.75,
                                   "fontFamily": "$font-family-noto-sans-jp",
                                   "fontSize": "$font-size-small",
                                   "fontWeight": "normal"
                                 }
                               ]
-                            },
-                            {
-                              "type": "text",
-                              "id": "LREtF",
-                              "name": "Post Date",
-                              "fill": "$color-accent-4",
-                              "content": "2026.10.08",
-                              "lineHeight": 1.875,
-                              "fontFamily": "$font-family-noto-sans-mono",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
                             }
                           ]
                         },
                         {
-                          "type": "text",
-                          "id": "e26Tz",
-                          "name": "Post Title",
-                          "fill": "$color-contrast",
-                          "textGrowth": "fixed-width",
+                          "id": "Y3mWKr",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card",
                           "width": "fill_container",
-                          "content": "Playground で開発する",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-large",
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "CZEUu",
-                          "name": "Post Excerpt",
-                          "fill": "$color-accent-4",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "ビルドなしで、保存するとすぐ表示に反映されます。",
-                          "lineHeight": 1.75,
-                          "fontFamily": "$font-family-noto-sans-jp",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
+                          "descendants": {
+                            "qv3Q5": {
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MjUyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              }
+                            },
+                            "EpVyi": {
+                              "width": 560,
+                              "y": 546,
+                              "x": 0
+                            },
+                            "l5H2FK": {
+                              "content": "積み木のように余白を重ねる"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.15"
+                            }
+                          }
                         }
                       ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "RgAHm",
+                      "name": "Post Excerpt",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": 816,
+                      "content": "テーマの余白を 1 つのスケールで揃えると、ブロックを並べるだけでリズムが生まれます。",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "s8ZIEG",
+                  "name": "Post",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$spacing-50",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "txlEG",
+                      "name": "Post Header",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$spacing-30",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Y2Ua0M",
+                          "name": "Post Terms",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "KYS3Q",
+                              "name": "Category Chip",
+                              "fill": "$color-accent-1",
+                              "cornerRadius": "$radius-full",
+                              "padding": [
+                                4,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "UZy2Z",
+                                  "name": "Category",
+                                  "fill": "$color-contrast",
+                                  "content": "Design",
+                                  "fontFamily": "$font-family-noto-sans-jp",
+                                  "fontSize": "$font-size-small",
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "fZF8H",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card",
+                          "width": "fill_container",
+                          "descendants": {
+                            "qv3Q5": {
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              }
+                            },
+                            "EpVyi": {
+                              "width": 560,
+                              "y": 546,
+                              "x": 0
+                            },
+                            "l5H2FK": {
+                              "content": "角丸のスケールを決める"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.14"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ezdaW",
+                      "name": "Post Excerpt",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": 816,
+                      "content": "画像、カード、ボタンの角丸を 4 段階に絞りました。",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sXJCt",
+                  "name": "Post",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$spacing-50",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FCaqg",
+                      "name": "Post Header",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$spacing-30",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "fU9Bu",
+                          "name": "Post Terms",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "E8uL4",
+                              "name": "Category Chip",
+                              "fill": "$color-accent-1",
+                              "cornerRadius": "$radius-full",
+                              "padding": [
+                                4,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "BCvdT",
+                                  "name": "Category",
+                                  "fill": "$color-contrast",
+                                  "content": "Design",
+                                  "fontFamily": "$font-family-noto-sans-jp",
+                                  "fontSize": "$font-size-small",
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "V1zp56",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card",
+                          "width": "fill_container",
+                          "descendants": {
+                            "qv3Q5": {
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              }
+                            },
+                            "EpVyi": {
+                              "width": 560,
+                              "y": 546,
+                              "x": 0
+                            },
+                            "l5H2FK": {
+                              "content": "20 カラムのグリッド"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.13"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "U0tEM",
+                      "name": "Post Excerpt",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": 816,
+                      "content": "コンテンツ幅をちょうど 12 カラムにする理由について。",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BLoE2",
+                  "name": "Post",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$spacing-50",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GU2U1",
+                      "name": "Post Header",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$spacing-30",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "TWbnw",
+                          "name": "Post Terms",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "vFc7i",
+                              "name": "Category Chip",
+                              "fill": "$color-accent-1",
+                              "cornerRadius": "$radius-full",
+                              "padding": [
+                                4,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Jdb8C",
+                                  "name": "Category",
+                                  "fill": "$color-contrast",
+                                  "content": "Journal",
+                                  "fontFamily": "$font-family-noto-sans-jp",
+                                  "fontSize": "$font-size-small",
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "HHJAq",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card",
+                          "width": "fill_container",
+                          "descendants": {
+                            "qv3Q5": {
+                              "type": "path",
+                              "id": "lGznK",
+                              "x": 0,
+                              "y": 0,
+                              "name": "Image",
+                              "metadata": {
+                                "type": "unsplash",
+                                "username": "nillufar",
+                                "link": "https://unsplash.com/@nillufar",
+                                "author": "nilufar nattaq"
+                              },
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "viewBox": [
+                                0,
+                                0,
+                                1376,
+                                640
+                              ],
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1655388506739-08eb029df45c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              },
+                              "width": 1376,
+                              "height": 640
+                            },
+                            "EpVyi": {
+                              "width": 560,
+                              "y": 546,
+                              "x": 0
+                            },
+                            "l5H2FK": {
+                              "content": "ノッチ付きの画像"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.12"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "rE3tr",
+                      "name": "Post Excerpt",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": 816,
+                      "content": "画像の角を切り欠いて、キャプションを収めます。",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lLsDB",
+                  "name": "Post",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$spacing-50",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "H1LIsi",
+                      "name": "Post Header",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$spacing-30",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Qv1h2",
+                          "name": "Post Terms",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "xyQtx",
+                              "name": "Category Chip",
+                              "fill": "$color-accent-1",
+                              "cornerRadius": "$radius-full",
+                              "padding": [
+                                4,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "mZwTL",
+                                  "name": "Category",
+                                  "fill": "$color-contrast",
+                                  "content": "Research",
+                                  "fontFamily": "$font-family-noto-sans-jp",
+                                  "fontSize": "$font-size-small",
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "AE46s",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card",
+                          "width": "fill_container",
+                          "descendants": {
+                            "qv3Q5": {
+                              "type": "path",
+                              "id": "F1PGq",
+                              "x": 0,
+                              "y": 0,
+                              "name": "Image",
+                              "metadata": {
+                                "type": "unsplash",
+                                "username": "zengyili",
+                                "link": "https://unsplash.com/@zengyili",
+                                "author": "ZENG YILI"
+                              },
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "viewBox": [
+                                0,
+                                0,
+                                1376,
+                                640
+                              ],
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1748959503729-8dcb7abd7559?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              },
+                              "width": 1376,
+                              "height": 640
+                            },
+                            "EpVyi": {
+                              "width": 560,
+                              "y": 546,
+                              "x": 0
+                            },
+                            "l5H2FK": {
+                              "content": "和文の行間"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.11"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Lhon8",
+                      "name": "Post Excerpt",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": 816,
+                      "content": "本文の行間を 1.75 にした理由と、見出しの行間について。",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "U7CMs2",
+                  "name": "Post",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$spacing-50",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eYt7I",
+                      "name": "Post Header",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$spacing-30",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "sFSiR",
+                          "name": "Post Terms",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "SKEKJ",
+                              "name": "Category Chip",
+                              "fill": "$color-accent-1",
+                              "cornerRadius": "$radius-full",
+                              "padding": [
+                                4,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "JawAh",
+                                  "name": "Category",
+                                  "fill": "$color-contrast",
+                                  "content": "Research",
+                                  "fontFamily": "$font-family-noto-sans-jp",
+                                  "fontSize": "$font-size-small",
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "lQT2h",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card",
+                          "width": "fill_container",
+                          "descendants": {
+                            "qv3Q5": {
+                              "type": "path",
+                              "id": "anXqY",
+                              "x": 0,
+                              "y": 0,
+                              "name": "Image",
+                              "metadata": {
+                                "type": "unsplash",
+                                "username": "stepansarg",
+                                "link": "https://unsplash.com/@stepansarg",
+                                "author": "Stepan Sargsyan"
+                              },
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "viewBox": [
+                                0,
+                                0,
+                                1376,
+                                640
+                              ],
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1538645731800-4640c639bba7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              },
+                              "width": 1376,
+                              "height": 640
+                            },
+                            "EpVyi": {
+                              "width": 560,
+                              "y": 546,
+                              "x": 0
+                            },
+                            "l5H2FK": {
+                              "content": "デバイスフォントで組む"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.10"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "lOqyz",
+                      "name": "Post Excerpt",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": 816,
+                      "content": "Web フォントを読み込まずに、端末の Noto Sans を使います。",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "m6mxzY",
+                  "name": "Post",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$spacing-50",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pXlX3",
+                      "name": "Post Header",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$spacing-30",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "R8Qhe",
+                          "name": "Post Terms",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "OZ4zb",
+                              "name": "Category Chip",
+                              "fill": "$color-accent-1",
+                              "cornerRadius": "$radius-full",
+                              "padding": [
+                                4,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "gXp2Q",
+                                  "name": "Category",
+                                  "fill": "$color-contrast",
+                                  "content": "Design",
+                                  "fontFamily": "$font-family-noto-sans-jp",
+                                  "fontSize": "$font-size-small",
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "L64F1",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card",
+                          "width": "fill_container",
+                          "descendants": {
+                            "qv3Q5": {
+                              "type": "path",
+                              "id": "Sneie",
+                              "x": 0,
+                              "y": 0,
+                              "name": "Image",
+                              "metadata": {
+                                "type": "unsplash",
+                                "username": "polarmermaid",
+                                "link": "https://unsplash.com/@polarmermaid",
+                                "author": "Anne Nygård"
+                              },
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "viewBox": [
+                                0,
+                                0,
+                                1376,
+                                640
+                              ],
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1651341508318-39601132a85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              },
+                              "width": 1376,
+                              "height": 640
+                            },
+                            "EpVyi": {
+                              "width": 560,
+                              "y": 546,
+                              "x": 0
+                            },
+                            "l5H2FK": {
+                              "content": "色を 6 つに絞る"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.09"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "PwmaM",
+                      "name": "Post Excerpt",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": 816,
+                      "content": "白とストーンの中間色、それに木の色を 1 つだけ。",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gwFNP",
+                  "name": "Post",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": "$spacing-50",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "o10iP2",
+                      "name": "Post Header",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": "$spacing-30",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jWpwW",
+                          "name": "Post Terms",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "nOYmS",
+                              "name": "Category Chip",
+                              "fill": "$color-accent-1",
+                              "cornerRadius": "$radius-full",
+                              "padding": [
+                                4,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "oiaQT",
+                                  "name": "Category",
+                                  "fill": "$color-contrast",
+                                  "content": "Journal",
+                                  "fontFamily": "$font-family-noto-sans-jp",
+                                  "fontSize": "$font-size-small",
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "hWcjP",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card",
+                          "width": "fill_container",
+                          "descendants": {
+                            "qv3Q5": {
+                              "type": "path",
+                              "id": "K53uCD",
+                              "x": 0,
+                              "y": 0,
+                              "name": "Image",
+                              "metadata": {
+                                "type": "unsplash",
+                                "username": "prateekkatyal",
+                                "link": "https://unsplash.com/@prateekkatyal",
+                                "author": "Prateek Katyal"
+                              },
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "viewBox": [
+                                0,
+                                0,
+                                1376,
+                                640
+                              ],
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1589178208772-6f239b7652e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzU3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              },
+                              "width": 1376,
+                              "height": 640
+                            },
+                            "EpVyi": {
+                              "width": 560,
+                              "y": 546,
+                              "x": 0
+                            },
+                            "l5H2FK": {
+                              "content": "Playground で開発する"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.08"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "fbkuy",
+                      "name": "Post Excerpt",
+                      "fill": "$color-accent-4",
+                      "textGrowth": "fixed-width",
+                      "width": 816,
+                      "content": "ビルドなしで、保存するとすぐ表示に反映されます。",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -11269,6 +11646,180 @@
           "ref": "f3DzIM",
           "name": "Footer",
           "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "n1h8AM",
+          "layoutPosition": "absolute",
+          "x": 104,
+          "y": 0,
+          "name": "Grid Overlay",
+          "enabled": false,
+          "width": 1376,
+          "height": 7232,
+          "gap": "$spacing-40",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "V7bWyU",
+              "name": "Col 1",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "FMGDg",
+              "name": "Col 2",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "FNQIG",
+              "name": "Col 3",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "Gn6ez",
+              "name": "Col 4",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "FE5xW",
+              "name": "Col 5",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "Bos4p",
+              "name": "Col 6",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "Tyc7k",
+              "name": "Col 7",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "w0XkY",
+              "name": "Col 8",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "Axbl5",
+              "name": "Col 9",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "m320bX",
+              "name": "Col 10",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "J09xQ",
+              "name": "Col 11",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "nHbki",
+              "name": "Col 12",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "hjrhm",
+              "name": "Col 13",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "w9VUvp",
+              "name": "Col 14",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "p40yx",
+              "name": "Col 15",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "BSzkN",
+              "name": "Col 16",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "twigR",
+              "name": "Col 17",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "l4okC",
+              "name": "Col 18",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "y7EJo6",
+              "name": "Col 19",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "HURl6",
+              "name": "Col 20",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            }
+          ]
         }
       ]
     },
@@ -11313,6 +11864,77 @@
               "layout": "vertical",
               "gap": "$spacing-30",
               "children": [
+                {
+                  "type": "frame",
+                  "id": "ujqcj",
+                  "name": "Breadcrumbs",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    0,
+                    "$spacing-40",
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tPToh",
+                      "name": "ホーム",
+                      "fill": "$color-accent-4",
+                      "content": "ホーム",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "prgW6",
+                      "name": "Separator",
+                      "fill": "$color-accent-4",
+                      "content": "/",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fJflJ",
+                      "name": "Blog",
+                      "fill": "$color-accent-4",
+                      "content": "Blog",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jnxbs",
+                      "name": "Separator",
+                      "fill": "$color-accent-4",
+                      "content": "/",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Rrb6R",
+                      "name": "Journal",
+                      "fill": "$color-accent-4",
+                      "content": "Journal",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
                 {
                   "type": "text",
                   "id": "zSQwY",
@@ -11360,87 +11982,85 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "tjSox",
-                  "name": "Post Card",
+                  "id": "L8zDy",
+                  "name": "Post",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$spacing-30",
+                  "gap": "$spacing-50",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "iimaG",
-                      "name": "Featured Image",
-                      "clip": true,
+                      "id": "kKIde",
+                      "name": "Post Header",
                       "width": "fill_container",
-                      "height": 256,
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MjUyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
-                        "mode": "cover"
-                      },
-                      "cornerRadius": "$radius-large"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "GPuoG",
-                      "name": "Post Meta",
-                      "gap": 12,
-                      "alignItems": "center",
+                      "layout": "vertical",
+                      "gap": "$spacing-30",
                       "children": [
                         {
                           "type": "frame",
-                          "id": "dULxt",
-                          "name": "Category Chip",
-                          "fill": "$color-accent-1",
-                          "cornerRadius": "$radius-full",
-                          "padding": [
-                            4,
-                            12
-                          ],
+                          "id": "U3DFxl",
+                          "name": "Post Terms",
+                          "gap": 8,
+                          "alignItems": "center",
                           "children": [
                             {
-                              "type": "text",
-                              "id": "mJMu5",
-                              "name": "Category",
-                              "fill": "$color-contrast",
-                              "content": "Journal",
-                              "lineHeight": 1.75,
-                              "fontFamily": "$font-family-noto-sans-jp",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
+                              "type": "frame",
+                              "id": "J8Za2",
+                              "name": "Category Chip",
+                              "fill": "$color-accent-1",
+                              "cornerRadius": "$radius-full",
+                              "padding": [
+                                4,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "R7YJJ",
+                                  "name": "Category",
+                                  "fill": "$color-contrast",
+                                  "content": "Journal",
+                                  "fontFamily": "$font-family-noto-sans-jp",
+                                  "fontSize": "$font-size-small",
+                                  "fontWeight": "normal"
+                                }
+                              ]
                             }
                           ]
                         },
                         {
-                          "type": "text",
-                          "id": "W2Eu8E",
-                          "name": "Post Date",
-                          "fill": "$color-accent-4",
-                          "content": "2026.10.15",
-                          "lineHeight": 1.875,
-                          "fontFamily": "$font-family-noto-sans-mono",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
+                          "id": "KB8bE",
+                          "type": "ref",
+                          "ref": "v05kjC",
+                          "name": "Post Card",
+                          "width": "fill_container",
+                          "descendants": {
+                            "wZwCB": {
+                              "geometry": "M16 0h310a16 16 0 0 1 16 16v384a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-288a16 16 0 0 1 16-16z",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MjUyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              }
+                            },
+                            "vNPbE": {
+                              "width": 183,
+                              "y": 320
+                            },
+                            "FC9Ta": {
+                              "content": "積み木のように余白を重ねる"
+                            },
+                            "E1BZNk": {
+                              "content": "2026.10.15"
+                            }
+                          }
                         }
                       ]
                     },
                     {
                       "type": "text",
-                      "id": "d8hhVd",
-                      "name": "Post Title",
-                      "fill": "$color-contrast",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "積み木のように余白を重ねる",
-                      "lineHeight": 1.5,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-large",
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "GqywT",
+                      "id": "aWgEt",
                       "name": "Post Excerpt",
                       "fill": "$color-accent-4",
                       "textGrowth": "fixed-width",
@@ -11455,87 +12075,85 @@
                 },
                 {
                   "type": "frame",
-                  "id": "h9wzjF",
-                  "name": "Post Card",
+                  "id": "rDCOj",
+                  "name": "Post",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$spacing-30",
+                  "gap": "$spacing-50",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "JiKdw",
-                      "name": "Featured Image",
-                      "clip": true,
+                      "id": "iBIei",
+                      "name": "Post Header",
                       "width": "fill_container",
-                      "height": 256,
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-                        "mode": "cover"
-                      },
-                      "cornerRadius": "$radius-large"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "qaDHU",
-                      "name": "Post Meta",
-                      "gap": 12,
-                      "alignItems": "center",
+                      "layout": "vertical",
+                      "gap": "$spacing-30",
                       "children": [
                         {
                           "type": "frame",
-                          "id": "i0Xhtf",
-                          "name": "Category Chip",
-                          "fill": "$color-accent-1",
-                          "cornerRadius": "$radius-full",
-                          "padding": [
-                            4,
-                            12
-                          ],
+                          "id": "dKnAH",
+                          "name": "Post Terms",
+                          "gap": 8,
+                          "alignItems": "center",
                           "children": [
                             {
-                              "type": "text",
-                              "id": "WSEmu",
-                              "name": "Category",
-                              "fill": "$color-contrast",
-                              "content": "Design",
-                              "lineHeight": 1.75,
-                              "fontFamily": "$font-family-noto-sans-jp",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
+                              "type": "frame",
+                              "id": "yTmAW",
+                              "name": "Category Chip",
+                              "fill": "$color-accent-1",
+                              "cornerRadius": "$radius-full",
+                              "padding": [
+                                4,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Mp2en",
+                                  "name": "Category",
+                                  "fill": "$color-contrast",
+                                  "content": "Design",
+                                  "fontFamily": "$font-family-noto-sans-jp",
+                                  "fontSize": "$font-size-small",
+                                  "fontWeight": "normal"
+                                }
+                              ]
                             }
                           ]
                         },
                         {
-                          "type": "text",
-                          "id": "uCtlS",
-                          "name": "Post Date",
-                          "fill": "$color-accent-4",
-                          "content": "2026.10.14",
-                          "lineHeight": 1.875,
-                          "fontFamily": "$font-family-noto-sans-mono",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
+                          "id": "B0ImO6",
+                          "type": "ref",
+                          "ref": "v05kjC",
+                          "name": "Post Card",
+                          "width": "fill_container",
+                          "descendants": {
+                            "wZwCB": {
+                              "geometry": "M16 0h310a16 16 0 0 1 16 16v384a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-288a16 16 0 0 1 16-16z",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              }
+                            },
+                            "vNPbE": {
+                              "width": 183,
+                              "y": 320
+                            },
+                            "FC9Ta": {
+                              "content": "角丸のスケールを決める"
+                            },
+                            "E1BZNk": {
+                              "content": "2026.10.14"
+                            }
+                          }
                         }
                       ]
                     },
                     {
                       "type": "text",
-                      "id": "HC5NL",
-                      "name": "Post Title",
-                      "fill": "$color-contrast",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "角丸のスケールを決める",
-                      "lineHeight": 1.5,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-large",
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "T8VNd",
+                      "id": "e8bWl",
                       "name": "Post Excerpt",
                       "fill": "$color-accent-4",
                       "textGrowth": "fixed-width",
@@ -11550,87 +12168,85 @@
                 },
                 {
                   "type": "frame",
-                  "id": "vYLoZ",
-                  "name": "Post Card",
+                  "id": "W1sYKI",
+                  "name": "Post",
                   "width": "fill_container",
                   "layout": "vertical",
-                  "gap": "$spacing-30",
+                  "gap": "$spacing-50",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "dpHtu",
-                      "name": "Featured Image",
-                      "clip": true,
+                      "id": "sXtSG",
+                      "name": "Post Header",
                       "width": "fill_container",
-                      "height": 256,
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-                        "mode": "cover"
-                      },
-                      "cornerRadius": "$radius-large"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "oAmyb",
-                      "name": "Post Meta",
-                      "gap": 12,
-                      "alignItems": "center",
+                      "layout": "vertical",
+                      "gap": "$spacing-30",
                       "children": [
                         {
                           "type": "frame",
-                          "id": "DfFr4",
-                          "name": "Category Chip",
-                          "fill": "$color-accent-1",
-                          "cornerRadius": "$radius-full",
-                          "padding": [
-                            4,
-                            12
-                          ],
+                          "id": "RvPOP",
+                          "name": "Post Terms",
+                          "gap": 8,
+                          "alignItems": "center",
                           "children": [
                             {
-                              "type": "text",
-                              "id": "Gj4T0",
-                              "name": "Category",
-                              "fill": "$color-contrast",
-                              "content": "Design",
-                              "lineHeight": 1.75,
-                              "fontFamily": "$font-family-noto-sans-jp",
-                              "fontSize": "$font-size-small",
-                              "fontWeight": "normal"
+                              "type": "frame",
+                              "id": "Cu6U9",
+                              "name": "Category Chip",
+                              "fill": "$color-accent-1",
+                              "cornerRadius": "$radius-full",
+                              "padding": [
+                                4,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "vpJR7",
+                                  "name": "Category",
+                                  "fill": "$color-contrast",
+                                  "content": "Design",
+                                  "fontFamily": "$font-family-noto-sans-jp",
+                                  "fontSize": "$font-size-small",
+                                  "fontWeight": "normal"
+                                }
+                              ]
                             }
                           ]
                         },
                         {
-                          "type": "text",
-                          "id": "sl66X",
-                          "name": "Post Date",
-                          "fill": "$color-accent-4",
-                          "content": "2026.10.13",
-                          "lineHeight": 1.875,
-                          "fontFamily": "$font-family-noto-sans-mono",
-                          "fontSize": "$font-size-small",
-                          "fontWeight": "normal"
+                          "id": "F8fYU",
+                          "type": "ref",
+                          "ref": "v05kjC",
+                          "name": "Post Card",
+                          "width": "fill_container",
+                          "descendants": {
+                            "wZwCB": {
+                              "geometry": "M16 0h310a16 16 0 0 1 16 16v384a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-312a16 16 0 0 1 16-16z",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NjkxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                                "mode": "cover"
+                              }
+                            },
+                            "vNPbE": {
+                              "width": 183,
+                              "y": 344
+                            },
+                            "FC9Ta": {
+                              "content": "20 カラムのグリッド"
+                            },
+                            "E1BZNk": {
+                              "content": "2026.10.13"
+                            }
+                          }
                         }
                       ]
                     },
                     {
                       "type": "text",
-                      "id": "O7qzBg",
-                      "name": "Post Title",
-                      "fill": "$color-contrast",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "20 カラムのグリッド",
-                      "lineHeight": 1.5,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-large",
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "QxX8r",
+                      "id": "iefJA",
                       "name": "Post Excerpt",
                       "fill": "$color-accent-4",
                       "textGrowth": "fixed-width",
@@ -11770,6 +12386,68 @@
           "name": "Footer",
           "width": "fill_container",
           "padding": "$spacing-40"
+        },
+        {
+          "type": "frame",
+          "id": "Zxcxx",
+          "layoutPosition": "absolute",
+          "x": 24,
+          "y": 0,
+          "name": "Grid Overlay",
+          "enabled": false,
+          "width": 342,
+          "height": 2365,
+          "gap": "$spacing-40",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "zGEGC",
+              "name": "Col 1",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "sglVY",
+              "name": "Col 2",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "Z1er55",
+              "name": "Col 3",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "kouGf",
+              "name": "Col 4",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "m6zgB",
+              "name": "Col 5",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "BnB1n",
+              "name": "Col 6",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            }
+          ]
         }
       ]
     },
@@ -11813,6 +12491,55 @@
               "layout": "vertical",
               "gap": "$spacing-30",
               "children": [
+                {
+                  "type": "frame",
+                  "id": "txGoe",
+                  "name": "Breadcrumbs",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    0,
+                    "$spacing-40",
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "leujP",
+                      "name": "ホーム",
+                      "fill": "$color-accent-4",
+                      "content": "ホーム",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Wwi8Y",
+                      "name": "Separator",
+                      "fill": "$color-accent-4",
+                      "content": "/",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KYkhQ",
+                      "name": "検索結果",
+                      "fill": "$color-accent-4",
+                      "content": "検索結果",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
                 {
                   "type": "text",
                   "id": "W8C4R",
@@ -11995,6 +12722,55 @@
               "layout": "vertical",
               "gap": "$spacing-30",
               "children": [
+                {
+                  "type": "frame",
+                  "id": "AO7sN",
+                  "name": "Breadcrumbs",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    0,
+                    "$spacing-40",
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r4b9eV",
+                      "name": "ホーム",
+                      "fill": "$color-accent-4",
+                      "content": "ホーム",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BZ6uf",
+                      "name": "Separator",
+                      "fill": "$color-accent-4",
+                      "content": "/",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NAd6v",
+                      "name": "検索結果",
+                      "fill": "$color-accent-4",
+                      "content": "検索結果",
+                      "lineHeight": 1.75,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
                 {
                   "type": "text",
                   "id": "Oqijw",
