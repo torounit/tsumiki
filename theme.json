@@ -164,6 +164,10 @@
 					"slug": "xxx-large"
 				}
 			]
+		},
+		"viewport": {
+			"mobile": "600px",
+			"tablet": "782px"
 		}
 	},
 	"styles": {

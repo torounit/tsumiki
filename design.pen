@@ -1050,7 +1050,7 @@
               "fill": "$color-accent-4",
               "textGrowth": "fixed-width",
               "width": 816,
-              "content": "Notch a corner of the image to tuck in a caption. The inverse radius of the notch is $radius-medium (16px); a notch under 32px tall uses half its height instead. The notch snaps to the grid: it spans whole columns plus the gutter after them, so the image resumes at the next column. Wide images take a fixed 8 of 20 columns. Content images hug their caption, up to 6 of 12. On mobile, both take 3 of 6. Longer text wraps instead of widening the notch. Text sits flush with the image's left and bottom edges, with $spacing-40 (24px) to its right. Above it, titles get $spacing-40 (24px) on desktop and $spacing-30 (16px) on mobile, and small captions get $spacing-20 (8px). A title and its date sit $spacing-20 (8px) apart.",
+              "content": "Notch a corner of the image to tuck in a caption. The inverse radius of the notch is $radius-medium (16px); a notch under 32px tall uses half its height instead. The notch snaps to the grid: it spans whole columns plus the gutter after them, so the image resumes at the next column. It hugs its text, rounded up to the next column, and longer text wraps instead of widening the notch. Wide images take 4 to 8 of 20 columns, and 2 to 3 of 6 on tablet and mobile. Content images hug their caption, up to 6 of 12. Images with a title use the 16:9 ratio, and 1:1 on tablet and mobile. Text sits flush with the image's left and bottom edges, with $spacing-40 (24px) to its right. Above it, titles get $spacing-40 (24px), or $spacing-30 (16px) on tablet and mobile, and small captions get $spacing-20 (8px). A title and its date sit $spacing-20 (8px) apart.",
               "lineHeight": 1.75,
               "fontFamily": "$font-family-noto-sans-jp",
               "fontSize": 14,
@@ -3256,7 +3256,7 @@
           "name": "Grid Overlay",
           "enabled": false,
           "width": 1376,
-          "height": 9097,
+          "height": 9173,
           "gap": "$spacing-40",
           "children": [
             {
@@ -3596,12 +3596,12 @@
                         "link": "https://unsplash.com/@tokyokohaku",
                         "author": "Tokyo Kohaku"
                       },
-                      "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                      "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-854a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-458a16 16 0 0 1-16-16v-648a16 16 0 0 1 16-16z",
                       "viewBox": [
                         0,
                         0,
                         1376,
-                        640
+                        774
                       ],
                       "fill": {
                         "type": "image",
@@ -3610,11 +3610,11 @@
                         "mode": "cover"
                       },
                       "width": 1376,
-                      "height": 640
+                      "height": 774
                     },
                     "EpVyi": {
-                      "width": 560,
-                      "y": 546,
+                      "width": 490,
+                      "y": 680,
                       "x": 0
                     },
                     "l5H2FK": {
@@ -6678,7 +6678,7 @@
           "name": "Grid Overlay",
           "enabled": false,
           "width": 342,
-          "height": 8055,
+          "height": 8157,
           "gap": "$spacing-40",
           "children": [
             {
@@ -6907,12 +6907,12 @@
                         "link": "https://unsplash.com/@tokyokohaku",
                         "author": "Tokyo Kohaku"
                       },
-                      "geometry": "M16 0h310a16 16 0 0 1 16 16v384a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-288a16 16 0 0 1 16-16z",
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v310a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-214a16 16 0 0 1 16-16z",
                       "viewBox": [
                         0,
                         0,
                         342,
-                        416
+                        342
                       ],
                       "fill": {
                         "type": "image",
@@ -6921,11 +6921,11 @@
                         "mode": "cover"
                       },
                       "width": 342,
-                      "height": 416
+                      "height": 342
                     },
                     "vNPbE": {
                       "width": 183,
-                      "y": 320
+                      "y": 246
                     },
                     "FC9Ta": {
                       "content": "WordPress ブロックのスタイル見本"
@@ -10202,7 +10202,7 @@
           "name": "Post Card",
           "reusable": true,
           "width": 1376,
-          "height": 640,
+          "height": 774,
           "layout": "none",
           "children": [
             {
@@ -10211,12 +10211,12 @@
               "x": 0,
               "y": 0,
               "name": "Image",
-              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+              "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-854a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-458a16 16 0 0 1-16-16v-648a16 16 0 0 1 16-16z",
               "viewBox": [
                 0,
                 0,
                 1376,
-                640
+                774
               ],
               "fill": {
                 "type": "image",
@@ -10225,15 +10225,15 @@
                 "mode": "cover"
               },
               "width": 1376,
-              "height": 640
+              "height": 774
             },
             {
               "type": "frame",
               "id": "EpVyi",
               "x": 0,
-              "y": 546,
+              "y": 680,
               "name": "Notch",
-              "width": 560,
+              "width": 490,
               "layout": "vertical",
               "gap": "$spacing-20",
               "padding": [
@@ -10297,7 +10297,7 @@
           "name": "Post Card - Mobile",
           "reusable": true,
           "width": 342,
-          "height": 416,
+          "height": 342,
           "layout": "none",
           "children": [
             {
@@ -10306,12 +10306,12 @@
               "x": 0,
               "y": 0,
               "name": "Image",
-              "geometry": "M16 0h310a16 16 0 0 1 16 16v384a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-288a16 16 0 0 1 16-16z",
+              "geometry": "M16 0h310a16 16 0 0 1 16 16v310a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-214a16 16 0 0 1 16-16z",
               "viewBox": [
                 0,
                 0,
                 342,
-                416
+                342
               ],
               "fill": {
                 "type": "image",
@@ -10320,13 +10320,13 @@
                 "mode": "cover"
               },
               "width": 342,
-              "height": 416
+              "height": 342
             },
             {
               "type": "frame",
               "id": "vNPbE",
               "x": 0,
-              "y": 320,
+              "y": 246,
               "name": "Notch",
               "width": 183,
               "layout": "vertical",
@@ -10589,7 +10589,7 @@
                           "width": "fill_container",
                           "descendants": {
                             "qv3Q5": {
-                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-138a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-438a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-138a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-572a16 16 0 0 1 16-16z",
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
@@ -10599,7 +10599,7 @@
                             },
                             "EpVyi": {
                               "width": 560,
-                              "y": 470,
+                              "y": 604,
                               "x": 0
                             },
                             "l5H2FK": {
@@ -10683,7 +10683,7 @@
                           "width": "fill_container",
                           "descendants": {
                             "qv3Q5": {
-                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-924a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-388a16 16 0 0 1-16-16v-648a16 16 0 0 1 16-16z",
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
@@ -10692,8 +10692,8 @@
                               }
                             },
                             "EpVyi": {
-                              "width": 560,
-                              "y": 546,
+                              "width": 420,
+                              "y": 680,
                               "x": 0
                             },
                             "l5H2FK": {
@@ -10777,7 +10777,7 @@
                           "width": "fill_container",
                           "descendants": {
                             "qv3Q5": {
-                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-994a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-318a16 16 0 0 1-16-16v-648a16 16 0 0 1 16-16z",
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
@@ -10786,8 +10786,8 @@
                               }
                             },
                             "EpVyi": {
-                              "width": 560,
-                              "y": 546,
+                              "width": 350,
+                              "y": 680,
                               "x": 0
                             },
                             "l5H2FK": {
@@ -10871,7 +10871,7 @@
                           "width": "fill_container",
                           "descendants": {
                             "qv3Q5": {
-                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-1064a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-648a16 16 0 0 1 16-16z",
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
@@ -10880,8 +10880,8 @@
                               }
                             },
                             "EpVyi": {
-                              "width": 560,
-                              "y": 546,
+                              "width": 280,
+                              "y": 680,
                               "x": 0
                             },
                             "l5H2FK": {
@@ -10976,12 +10976,12 @@
                                 "link": "https://unsplash.com/@nillufar",
                                 "author": "nilufar nattaq"
                               },
-                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-1064a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-648a16 16 0 0 1 16-16z",
                               "viewBox": [
                                 0,
                                 0,
                                 1376,
-                                640
+                                774
                               ],
                               "fill": {
                                 "type": "image",
@@ -10990,11 +10990,11 @@
                                 "mode": "cover"
                               },
                               "width": 1376,
-                              "height": 640
+                              "height": 774
                             },
                             "EpVyi": {
-                              "width": 560,
-                              "y": 546,
+                              "width": 280,
+                              "y": 680,
                               "x": 0
                             },
                             "l5H2FK": {
@@ -11089,12 +11089,12 @@
                                 "link": "https://unsplash.com/@zengyili",
                                 "author": "ZENG YILI"
                               },
-                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-1064a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-648a16 16 0 0 1 16-16z",
                               "viewBox": [
                                 0,
                                 0,
                                 1376,
-                                640
+                                774
                               ],
                               "fill": {
                                 "type": "image",
@@ -11103,11 +11103,11 @@
                                 "mode": "cover"
                               },
                               "width": 1376,
-                              "height": 640
+                              "height": 774
                             },
                             "EpVyi": {
-                              "width": 560,
-                              "y": 546,
+                              "width": 280,
+                              "y": 680,
                               "x": 0
                             },
                             "l5H2FK": {
@@ -11202,12 +11202,12 @@
                                 "link": "https://unsplash.com/@stepansarg",
                                 "author": "Stepan Sargsyan"
                               },
-                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-994a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-318a16 16 0 0 1-16-16v-648a16 16 0 0 1 16-16z",
                               "viewBox": [
                                 0,
                                 0,
                                 1376,
-                                640
+                                774
                               ],
                               "fill": {
                                 "type": "image",
@@ -11216,11 +11216,11 @@
                                 "mode": "cover"
                               },
                               "width": 1376,
-                              "height": 640
+                              "height": 774
                             },
                             "EpVyi": {
-                              "width": 560,
-                              "y": 546,
+                              "width": 350,
+                              "y": 680,
                               "x": 0
                             },
                             "l5H2FK": {
@@ -11315,12 +11315,12 @@
                                 "link": "https://unsplash.com/@polarmermaid",
                                 "author": "Anne Nygård"
                               },
-                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-1064a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-648a16 16 0 0 1 16-16z",
                               "viewBox": [
                                 0,
                                 0,
                                 1376,
-                                640
+                                774
                               ],
                               "fill": {
                                 "type": "image",
@@ -11329,11 +11329,11 @@
                                 "mode": "cover"
                               },
                               "width": 1376,
-                              "height": 640
+                              "height": 774
                             },
                             "EpVyi": {
-                              "width": 560,
-                              "y": 546,
+                              "width": 280,
+                              "y": 680,
                               "x": 0
                             },
                             "l5H2FK": {
@@ -11428,12 +11428,12 @@
                                 "link": "https://unsplash.com/@prateekkatyal",
                                 "author": "Prateek Katyal"
                               },
-                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v608a16 16 0 0 1-16 16h-784a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-528a16 16 0 0 1-16-16v-514a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h1344a16 16 0 0 1 16 16v742a16 16 0 0 1-16 16h-994a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-318a16 16 0 0 1-16-16v-648a16 16 0 0 1 16-16z",
                               "viewBox": [
                                 0,
                                 0,
                                 1376,
-                                640
+                                774
                               ],
                               "fill": {
                                 "type": "image",
@@ -11442,11 +11442,11 @@
                                 "mode": "cover"
                               },
                               "width": 1376,
-                              "height": 640
+                              "height": 774
                             },
                             "EpVyi": {
-                              "width": 560,
-                              "y": 546,
+                              "width": 350,
+                              "y": 680,
                               "x": 0
                             },
                             "l5H2FK": {
@@ -11656,7 +11656,7 @@
           "name": "Grid Overlay",
           "enabled": false,
           "width": 1376,
-          "height": 7232,
+          "height": 9245,
           "gap": "$spacing-40",
           "children": [
             {
@@ -12036,7 +12036,7 @@
                           "width": "fill_container",
                           "descendants": {
                             "wZwCB": {
-                              "geometry": "M16 0h310a16 16 0 0 1 16 16v384a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-288a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h310a16 16 0 0 1 16 16v310a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-214a16 16 0 0 1 16-16z",
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
@@ -12046,7 +12046,7 @@
                             },
                             "vNPbE": {
                               "width": 183,
-                              "y": 320
+                              "y": 246
                             },
                             "FC9Ta": {
                               "content": "積み木のように余白を重ねる"
@@ -12129,7 +12129,7 @@
                           "width": "fill_container",
                           "descendants": {
                             "wZwCB": {
-                              "geometry": "M16 0h310a16 16 0 0 1 16 16v384a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-288a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h310a16 16 0 0 1 16 16v310a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-214a16 16 0 0 1 16-16z",
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
@@ -12139,7 +12139,7 @@
                             },
                             "vNPbE": {
                               "width": 183,
-                              "y": 320
+                              "y": 246
                             },
                             "FC9Ta": {
                               "content": "角丸のスケールを決める"
@@ -12222,7 +12222,7 @@
                           "width": "fill_container",
                           "descendants": {
                             "wZwCB": {
-                              "geometry": "M16 0h310a16 16 0 0 1 16 16v384a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-312a16 16 0 0 1 16-16z",
+                              "geometry": "M16 0h310a16 16 0 0 1 16 16v310a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-238a16 16 0 0 1 16-16z",
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
@@ -12232,7 +12232,7 @@
                             },
                             "vNPbE": {
                               "width": 183,
-                              "y": 344
+                              "y": 270
                             },
                             "FC9Ta": {
                               "content": "20 カラムのグリッド"
@@ -12396,7 +12396,7 @@
           "name": "Grid Overlay",
           "enabled": false,
           "width": 342,
-          "height": 2365,
+          "height": 2523,
           "gap": "$spacing-40",
           "children": [
             {
