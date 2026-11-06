@@ -103,35 +103,3 @@ Primary Branch: main
 		}
 	}
 }
-
-/* stylelint-disable selector-class-pattern -- Core's BEM class names. */
-.wp-block-navigation-overlay-close svg,
-.wp-block-navigation .wp-block-navigation__responsive-container-open svg {
-	width: 20px;
-	height: 20px;
-}
-
-.is-style-navigation-overlay {
-
-	.wp-block-navigation {
-		gap: var(--overlay-item-gap);
-	}
-
-	> .wp-block-navigation {
-		padding-block: var(--overlay-nav-padding);
-	}
-
-	/* The selectors match core's, which set these for every submenu that stays open. */
-	.wp-block-navigation .has-child.open-always {
-		gap: var(--wp--preset--spacing--30);
-	}
-
-	.wp-block-navigation .has-child.open-always .wp-block-navigation__submenu-container {
-		gap: var(--wp--preset--spacing--20);
-		padding-inline: var(--overlay-submenu-indent) 0;
-		color: var(--wp--preset--color--accent-4);
-		font-size: var(--overlay-submenu-font-size);
-		line-height: 1.5;
-	}
-}
-/* stylelint-enable selector-class-pattern */
