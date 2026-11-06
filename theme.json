@@ -475,8 +475,30 @@
 					}
 				}
 			},
+			"core/query-pagination": {
+				"css": "justify-content:center;",
+				"elements": {
+					"link": {
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				},
+				"spacing": {
+					"blockGap": "var:preset|spacing|20",
+					"margin": {
+						"top": "var:preset|spacing|60"
+					}
+				},
+				"typography": {
+					"fontSize": "var:preset|font-size|small"
+				}
+			},
 			"core/query-pagination-numbers": {
-				"css": "& .page-numbers{border-radius:var(--wp--preset--border-radius--full)}"
+				"css": "display:flex;gap:4px;padding-inline:var(--wp--preset--spacing--30);& .page-numbers{display:flex;justify-content:center;align-items:center;width:36px;height:36px;border-radius:var(--wp--preset--border-radius--full)}& .page-numbers.current{background-color:var(--wp--preset--color--accent-4);color:var(--wp--preset--color--base)}",
+				"typography": {
+					"fontFamily": "var:preset|font-family|monospace"
+				}
 			},
 			"core/quote": {
 				"border": {
