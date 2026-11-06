@@ -103,3 +103,81 @@ Primary Branch: main
 		}
 	}
 }
+
+/*
+ * A large card beside two small ones, then a row of two medium ones, repeated
+ * with the large card on alternating sides. The editor keeps a hidden copy of
+ * the post being edited in the list, which the counts skip.
+ */
+.is-style-post-tiles {
+
+	> li {
+		--tile-columns: var(--tiles-small-columns);
+		--tile-notch-tracks: var(--tiles-small-notch-tracks);
+		--tile-notch-columns: var(--tiles-small-notch-columns);
+		--tile-title-size: var(--tiles-small-title-size);
+		grid-column-end: span var(--tile-columns);
+		place-self: stretch;
+		aspect-ratio: var(--tiles-aspect-ratio);
+	}
+
+	> li:nth-child(5n + 1 of :not([style])) {
+		--tile-columns: var(--tiles-large-columns);
+		--tile-notch-tracks: var(--tiles-large-notch-tracks);
+		--tile-notch-columns: var(--tiles-large-notch-columns);
+		--tile-title-size: var(--tiles-large-title-size);
+		grid-row-end: span var(--tiles-large-rows);
+		aspect-ratio: var(--tiles-large-aspect-ratio);
+	}
+
+	> li:nth-child(10n + 6 of :not([style])) {
+		grid-column: span var(--tile-columns) / -1;
+	}
+
+	/* Two cards left over in a group have no small pair, so they sit side by side. */
+	> li:nth-child(5n + 4 of :not([style])),
+	> li:nth-child(5n of :not([style])),
+	> li:nth-child(5n + 1 of :not([style])):nth-last-child(2 of :not([style])),
+	> li:nth-child(5n + 2 of :not([style])):nth-last-child(1 of :not([style])) {
+		--tile-columns: var(--tiles-medium-columns);
+		--tile-notch-tracks: var(--tiles-medium-notch-tracks);
+		--tile-notch-columns: var(--tiles-medium-notch-columns);
+		--tile-title-size: var(--tiles-large-title-size);
+		grid-row-end: auto;
+		aspect-ratio: var(--tiles-aspect-ratio);
+	}
+
+	/* A card left on its own takes the whole row. */
+	> li:nth-child(5n + 1 of :not([style])):nth-last-child(1 of :not([style])),
+	> li:nth-child(5n + 4 of :not([style])):nth-last-child(1 of :not([style])) {
+		--tile-notch-tracks: var(--tiles-large-notch-tracks);
+		--tile-notch-columns: var(--tiles-large-notch-columns);
+		grid-column: 1 / -1;
+		grid-row-end: auto;
+		aspect-ratio: var(--tiles-large-aspect-ratio);
+	}
+
+	.is-style-notched {
+		--notch-columns: var(--tile-notch-tracks);
+		--notch-min-columns: min(var(--tiles-notch-min-columns), var(--tile-notch-columns));
+		--notch-share: calc(var(--tile-notch-columns) / var(--tile-notch-tracks));
+		grid-template-rows: minmax(0, 1fr) auto;
+		height: 100%;
+		aspect-ratio: auto;
+	}
+
+	.is-style-notched:not(:has(> .wp-block-post-featured-image)) {
+		box-sizing: border-box;
+		padding: var(--wp--preset--spacing--40);
+		border-radius: var(--wp--preset--border-radius--medium);
+		background-color: var(--wp--preset--color--accent-5);
+
+		> * {
+			padding: 0;
+		}
+	}
+
+	.wp-block-post-title {
+		font-size: var(--tile-title-size);
+	}
+}
