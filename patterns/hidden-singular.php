@@ -12,8 +12,8 @@
 ?>
 <!-- wp:template-part {"slug":"header","area":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
-<main class="wp-block-group"><!-- wp:pattern {"slug":"tsumiki/hidden-post-hero"} /-->
+<!-- wp:group {"tagName":"main","className":"is-style-site-main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group is-style-site-main"><!-- wp:pattern {"slug":"tsumiki/hidden-post-hero"} /-->
 
 <!-- wp:post-content {"layout":{"type":"constrained"}} /--></main>
 <!-- /wp:group -->
