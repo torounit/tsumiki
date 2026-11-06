@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.2/theme.json",
+	"version": 3,
+	"title": "Navigation Overlay",
+	"slug": "navigation-overlay",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"dimensions": {
+			"minHeight": "100dvh"
+		},
+		"spacing": {
+			"blockGap": "0"
+		},
+		"blocks": {
+			"core/navigation": {
+				"typography": {
+					"fontSize": "var:preset|font-size|xx-large",
+					"lineHeight": "1.4"
+				},
+				"@tablet": {
+					"typography": {
+						"fontSize": "var:preset|font-size|x-large"
+					}
+				},
+				"@mobile": {
+					"typography": {
+						"fontSize": "var:preset|font-size|x-large"
+					}
+				}
+			}
+		},
+		"css": "--overlay-item-gap:var(--wp--preset--spacing--40);--overlay-nav-padding:var(--wp--preset--spacing--60);--overlay-submenu-font-size:var(--wp--preset--font-size--large);--overlay-submenu-indent:var(--wp--preset--spacing--40);",
+		"@tablet": {
+			"css": "--overlay-item-gap:var(--wp--preset--spacing--30);--overlay-nav-padding:var(--wp--preset--spacing--50);--overlay-submenu-font-size:var(--wp--preset--font-size--medium);--overlay-submenu-indent:var(--wp--preset--spacing--30);"
+		},
+		"@mobile": {
+			"css": "--overlay-item-gap:var(--wp--preset--spacing--30);--overlay-nav-padding:var(--wp--preset--spacing--50);--overlay-submenu-font-size:var(--wp--preset--font-size--medium);--overlay-submenu-indent:var(--wp--preset--spacing--30);"
+		}
+	}
+}
