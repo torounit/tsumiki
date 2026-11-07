@@ -10611,19 +10611,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "j8Txe",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": 816,
-                      "content": "余白、角丸、文字サイズを最初にスケールとして決めておくと、ブロックを並べるだけでページ全体のリズムが揃います。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -10705,19 +10692,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "RgAHm",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": 816,
-                      "content": "テーマの余白を 1 つのスケールで揃えると、ブロックを並べるだけでリズムが生まれます。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -10799,19 +10773,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "ezdaW",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": 816,
-                      "content": "画像、カード、ボタンの角丸を 4 段階に絞りました。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -10893,19 +10854,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "U0tEM",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": 816,
-                      "content": "コンテンツ幅をちょうど 12 カラムにする理由について。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -11006,19 +10954,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "rE3tr",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": 816,
-                      "content": "画像の角を切り欠いて、キャプションを収めます。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -11119,19 +11054,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "Lhon8",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": 816,
-                      "content": "本文の行間を 1.75 にした理由と、見出しの行間について。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -11232,19 +11154,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "lOqyz",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": 816,
-                      "content": "Web フォントを読み込まずに、端末の Noto Sans を使います。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -11345,19 +11254,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "PwmaM",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": 816,
-                      "content": "白とストーンの中間色、それに木の色を 1 つだけ。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -11458,19 +11354,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "fbkuy",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": 816,
-                      "content": "ビルドなしで、保存するとすぐ表示に反映されます。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -11656,7 +11539,7 @@
           "name": "Grid Overlay",
           "enabled": false,
           "width": 1376,
-          "height": 9245,
+          "height": 8687,
           "gap": "$spacing-40",
           "children": [
             {
@@ -12057,19 +11940,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "aWgEt",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "テーマの余白を 1 つのスケールで揃えると、ブロックを並べるだけでリズムが生まれます。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -12150,19 +12020,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "e8bWl",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "画像、カード、ボタンの角丸を 4 段階に絞りました。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -12243,19 +12100,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "iefJA",
-                      "name": "Post Excerpt",
-                      "fill": "$color-accent-4",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "コンテンツ幅をちょうど 12 カラムにする理由について。",
-                      "lineHeight": 1.75,
-                      "fontFamily": "$font-family-noto-sans-jp",
-                      "fontSize": "$font-size-small",
-                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -12396,7 +12240,7 @@
           "name": "Grid Overlay",
           "enabled": false,
           "width": 342,
-          "height": 2523,
+          "height": 1973,
           "gap": "$spacing-40",
           "children": [
             {
@@ -13295,6 +13139,2098 @@
               "fontFamily": "$font-family-noto-sans-jp",
               "fontSize": "$font-size-x-large",
               "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lZpZq",
+      "x": 14976,
+      "y": 0,
+      "name": "Home",
+      "clip": true,
+      "width": 1584,
+      "fill": "$color-base",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "WlFWQ",
+          "type": "ref",
+          "ref": "L6hjb",
+          "name": "Header",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "MWOhw",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$spacing-60",
+          "padding": [
+            "$spacing-60",
+            "$spacing-70",
+            "$spacing-70",
+            "$spacing-70"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "rfoWI",
+              "name": "Post Template",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$spacing-40",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZRA5n",
+                  "name": "Tiles 1",
+                  "width": "fill_container",
+                  "gap": "$spacing-40",
+                  "children": [
+                    {
+                      "id": "Pj0qT",
+                      "type": "ref",
+                      "ref": "TzPrL",
+                      "name": "Post Card - Large",
+                      "width": 816,
+                      "height": 628,
+                      "descendants": {
+                        "qv3Q5": {
+                          "geometry": "M16 0h784a16 16 0 0 1 16 16v596a16 16 0 0 1-16 16h-364a16 16 0 0 1-16-16v-176a16 16 0 0 0-16-16h-388a16 16 0 0 1-16-16v-388a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            816,
+                            628
+                          ],
+                          "width": 816,
+                          "height": 628,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "EpVyi": {
+                          "x": 0,
+                          "y": 420,
+                          "width": 420
+                        },
+                        "l5H2FK": {
+                          "content": "ブロックテーマの余白を theme.json で設計するときに、最初に決めておきたい 3 つのスケールについて",
+                          "fontSize": "$font-size-x-large"
+                        },
+                        "w0jah": {
+                          "content": "2026.10.16"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "r49t9E",
+                      "name": "Small Cards",
+                      "layout": "vertical",
+                      "gap": "$spacing-40",
+                      "children": [
+                        {
+                          "id": "dmSjj",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card - Small",
+                          "width": 536,
+                          "height": 302,
+                          "descendants": {
+                            "qv3Q5": {
+                              "geometry": "M16 0h504a16 16 0 0 1 16 16v270a16 16 0 0 1-16 16h-224a16 16 0 0 1-16-16v-51a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-187a16 16 0 0 1 16-16z",
+                              "viewBox": [
+                                0,
+                                0,
+                                536,
+                                302
+                              ],
+                              "width": 536,
+                              "height": 302,
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                                "mode": "cover"
+                              }
+                            },
+                            "EpVyi": {
+                              "x": 0,
+                              "y": 219,
+                              "width": 280
+                            },
+                            "l5H2FK": {
+                              "content": "積み木のように余白を重ねる",
+                              "fontSize": "$font-size-large"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.15"
+                            }
+                          }
+                        },
+                        {
+                          "id": "LF7hq",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card - Small",
+                          "width": 536,
+                          "height": 302,
+                          "descendants": {
+                            "qv3Q5": {
+                              "geometry": "M16 0h504a16 16 0 0 1 16 16v270a16 16 0 0 1-16 16h-224a16 16 0 0 1-16-16v-51a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-187a16 16 0 0 1 16-16z",
+                              "viewBox": [
+                                0,
+                                0,
+                                536,
+                                302
+                              ],
+                              "width": 536,
+                              "height": 302,
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                                "mode": "cover"
+                              }
+                            },
+                            "EpVyi": {
+                              "x": 0,
+                              "y": 219,
+                              "width": 280
+                            },
+                            "l5H2FK": {
+                              "content": "角丸のスケールを決める",
+                              "fontSize": "$font-size-large"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.14"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o8joTf",
+                  "name": "Tiles 2",
+                  "width": "fill_container",
+                  "gap": "$spacing-40",
+                  "children": [
+                    {
+                      "id": "SGjzN",
+                      "type": "ref",
+                      "ref": "TzPrL",
+                      "name": "Post Card - Medium",
+                      "width": 676,
+                      "height": 380,
+                      "descendants": {
+                        "qv3Q5": {
+                          "geometry": "M16 0h644a16 16 0 0 1 16 16v348a16 16 0 0 1-16 16h-364a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-254a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            676,
+                            380
+                          ],
+                          "width": 676,
+                          "height": 380,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1571506562879-feb067e54235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "EpVyi": {
+                          "x": 0,
+                          "y": 286,
+                          "width": 280
+                        },
+                        "l5H2FK": {
+                          "content": "20 カラムのグリッド",
+                          "fontSize": "$font-size-x-large"
+                        },
+                        "w0jah": {
+                          "content": "2026.10.13"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Q6m4b3",
+                      "type": "ref",
+                      "ref": "TzPrL",
+                      "name": "Post Card - Medium",
+                      "width": 676,
+                      "height": 380,
+                      "descendants": {
+                        "qv3Q5": {
+                          "geometry": "M16 0h644a16 16 0 0 1 16 16v348a16 16 0 0 1-16 16h-364a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-254a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            676,
+                            380
+                          ],
+                          "width": 676,
+                          "height": 380,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1655388506739-08eb029df45c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "EpVyi": {
+                          "x": 0,
+                          "y": 286,
+                          "width": 280
+                        },
+                        "l5H2FK": {
+                          "content": "ノッチ付きの画像",
+                          "fontSize": "$font-size-x-large"
+                        },
+                        "w0jah": {
+                          "content": "2026.10.12"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Y96oGe",
+                  "name": "Tiles 3",
+                  "width": "fill_container",
+                  "gap": "$spacing-40",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "n2CAIg",
+                      "name": "Small Cards",
+                      "layout": "vertical",
+                      "gap": "$spacing-40",
+                      "children": [
+                        {
+                          "id": "nmiH4",
+                          "type": "ref",
+                          "ref": "TzPrL",
+                          "name": "Post Card - Small",
+                          "width": 536,
+                          "height": 302,
+                          "descendants": {
+                            "qv3Q5": {
+                              "geometry": "M16 0h504a16 16 0 0 1 16 16v270a16 16 0 0 1-16 16h-224a16 16 0 0 1-16-16v-51a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-187a16 16 0 0 1 16-16z",
+                              "viewBox": [
+                                0,
+                                0,
+                                536,
+                                302
+                              ],
+                              "width": 536,
+                              "height": 302,
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "https://images.unsplash.com/photo-1538645731800-4640c639bba7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                                "mode": "cover"
+                              }
+                            },
+                            "EpVyi": {
+                              "x": 0,
+                              "y": 219,
+                              "width": 280
+                            },
+                            "l5H2FK": {
+                              "content": "デバイスフォントで組む",
+                              "fontSize": "$font-size-large"
+                            },
+                            "w0jah": {
+                              "content": "2026.10.10"
+                            }
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "e2OHrh",
+                          "name": "Post Card - No Image",
+                          "width": 536,
+                          "height": 302,
+                          "fill": "$color-accent-5",
+                          "cornerRadius": "$radius-medium",
+                          "layout": "vertical",
+                          "gap": "$spacing-20",
+                          "padding": "$spacing-40",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FBMiK",
+                              "name": "Post Title",
+                              "fill": "$color-contrast",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "色を 6 つに絞る",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font-family-noto-sans-jp",
+                              "fontSize": "$font-size-large",
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "jueEm",
+                              "name": "Post Date",
+                              "fill": "$color-accent-4",
+                              "content": "2026.10.09",
+                              "lineHeight": 1.875,
+                              "fontFamily": "$font-family-noto-sans-mono",
+                              "fontSize": "$font-size-small",
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "wZqiP",
+                      "type": "ref",
+                      "ref": "TzPrL",
+                      "name": "Post Card - Large",
+                      "width": 816,
+                      "height": 628,
+                      "descendants": {
+                        "qv3Q5": {
+                          "geometry": "M16 0h784a16 16 0 0 1 16 16v596a16 16 0 0 1-16 16h-504a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-502a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            816,
+                            628
+                          ],
+                          "width": 816,
+                          "height": 628,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1748959503729-8dcb7abd7559?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "EpVyi": {
+                          "x": 0,
+                          "y": 534,
+                          "width": 280
+                        },
+                        "l5H2FK": {
+                          "content": "和文の行間",
+                          "fontSize": "$font-size-x-large"
+                        },
+                        "w0jah": {
+                          "content": "2026.10.11"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jKFeq",
+                  "name": "Tiles 4",
+                  "width": "fill_container",
+                  "gap": "$spacing-40",
+                  "children": [
+                    {
+                      "id": "slwYI",
+                      "type": "ref",
+                      "ref": "TzPrL",
+                      "name": "Post Card - Medium",
+                      "width": 676,
+                      "height": 380,
+                      "descendants": {
+                        "qv3Q5": {
+                          "geometry": "M16 0h644a16 16 0 0 1 16 16v348a16 16 0 0 1-16 16h-294a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-318a16 16 0 0 1-16-16v-254a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            676,
+                            380
+                          ],
+                          "width": 676,
+                          "height": 380,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1589178208772-6f239b7652e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "EpVyi": {
+                          "x": 0,
+                          "y": 286,
+                          "width": 350
+                        },
+                        "l5H2FK": {
+                          "content": "Playground で開発する",
+                          "fontSize": "$font-size-x-large"
+                        },
+                        "w0jah": {
+                          "content": "2026.10.08"
+                        }
+                      }
+                    },
+                    {
+                      "id": "qBGQ0",
+                      "type": "ref",
+                      "ref": "TzPrL",
+                      "name": "Post Card - Medium",
+                      "width": 676,
+                      "height": 380,
+                      "descendants": {
+                        "qv3Q5": {
+                          "geometry": "M16 0h644a16 16 0 0 1 16 16v348a16 16 0 0 1-16 16h-364a16 16 0 0 1-16-16v-62a16 16 0 0 0-16-16h-248a16 16 0 0 1-16-16v-254a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            676,
+                            380
+                          ],
+                          "width": 676,
+                          "height": 380,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1518218475781-e68795a570d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "EpVyi": {
+                          "x": 0,
+                          "y": 286,
+                          "width": 280
+                        },
+                        "l5H2FK": {
+                          "content": "Theme Check を通す",
+                          "fontSize": "$font-size-x-large"
+                        },
+                        "w0jah": {
+                          "content": "2026.10.07"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "e1Ehn",
+              "name": "Query Pagination",
+              "width": "fill_container",
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ylp1w",
+                  "name": "Previous",
+                  "fill": "$color-contrast",
+                  "content": "← 前へ",
+                  "lineHeight": 1.75,
+                  "fontFamily": "$font-family-noto-sans-jp",
+                  "fontSize": "$font-size-small",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "LnoUJ",
+                  "name": "Page Numbers",
+                  "gap": 4,
+                  "padding": [
+                    0,
+                    "$spacing-30"
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cJi6c",
+                      "name": "Current Page",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "$color-accent-4",
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "G9Vp4a",
+                          "name": "Number",
+                          "fill": "$color-base",
+                          "content": "1",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "atkMi",
+                      "name": "Page",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aWewq",
+                          "name": "Number",
+                          "fill": "$color-contrast",
+                          "content": "2",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vnA3b",
+                      "name": "Page",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mvkT4",
+                          "name": "Number",
+                          "fill": "$color-contrast",
+                          "content": "3",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dhQ7c",
+                      "name": "Page",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rZkFo",
+                          "name": "Number",
+                          "fill": "$color-contrast",
+                          "content": "…",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "H4PAY",
+                      "name": "Page",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CMNaH",
+                          "name": "Number",
+                          "fill": "$color-contrast",
+                          "content": "8",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "r9iWOS",
+                  "name": "Next",
+                  "fill": "$color-contrast",
+                  "content": "次へ →",
+                  "lineHeight": 1.75,
+                  "fontFamily": "$font-family-noto-sans-jp",
+                  "fontSize": "$font-size-small",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fN4DU",
+          "type": "ref",
+          "ref": "f3DzIM",
+          "name": "Footer",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "n1JJ5",
+          "layoutPosition": "absolute",
+          "x": 104,
+          "y": 0,
+          "name": "Grid Overlay",
+          "width": 1376,
+          "height": 2642,
+          "gap": "$spacing-40",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "ICO8y",
+              "name": "Col 1",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "U1jOrR",
+              "name": "Col 2",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "izYw6",
+              "name": "Col 3",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "Mz2Xz",
+              "name": "Col 4",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "RQtV3",
+              "name": "Col 5",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "toiU9",
+              "name": "Col 6",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "nDmQE",
+              "name": "Col 7",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "bPo7m",
+              "name": "Col 8",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "h5kyJ",
+              "name": "Col 9",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "rA1Kt",
+              "name": "Col 10",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "iURRa",
+              "name": "Col 11",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "qAzNo",
+              "name": "Col 12",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "qyQ6E",
+              "name": "Col 13",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "PSniR",
+              "name": "Col 14",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "wJdTy",
+              "name": "Col 15",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "JldFx",
+              "name": "Col 16",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "B3LXRy",
+              "name": "Col 17",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "LDKPJ",
+              "name": "Col 18",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "iHDCW",
+              "name": "Col 19",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "cqMBQ",
+              "name": "Col 20",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "L4M5q",
+      "x": 17742,
+      "y": 0,
+      "name": "Home - Mobile",
+      "clip": true,
+      "width": 390,
+      "fill": "$color-base",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "xJyeq",
+          "type": "ref",
+          "ref": "L6hjb",
+          "name": "Header",
+          "width": "fill_container",
+          "padding": "$spacing-40"
+        },
+        {
+          "type": "frame",
+          "id": "w2jgI",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$spacing-60",
+          "padding": [
+            "$spacing-40",
+            "$spacing-40",
+            "$spacing-60",
+            "$spacing-40"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "S2zoEB",
+              "name": "Post Template",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$spacing-40",
+              "children": [
+                {
+                  "id": "a3I53e",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Large",
+                  "width": 342,
+                  "height": 342,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v310a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-160a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-118a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        342,
+                        342
+                      ],
+                      "width": 342,
+                      "height": 342,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 150,
+                      "width": 183
+                    },
+                    "FC9Ta": {
+                      "content": "ブロックテーマの余白を theme.json で設計するときに、最初に決めておきたい 3 つのスケールについて"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.16"
+                    }
+                  }
+                },
+                {
+                  "id": "RNmEC",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Small",
+                  "width": 342,
+                  "height": 257,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v225a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-129a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        342,
+                        257
+                      ],
+                      "width": 342,
+                      "height": 257,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 161,
+                      "width": 183
+                    },
+                    "FC9Ta": {
+                      "content": "積み木のように余白を重ねる"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.15"
+                    }
+                  }
+                },
+                {
+                  "id": "lj56B",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Small",
+                  "width": 342,
+                  "height": 257,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v225a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-129a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        342,
+                        257
+                      ],
+                      "width": 342,
+                      "height": 257,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 161,
+                      "width": 183
+                    },
+                    "FC9Ta": {
+                      "content": "角丸のスケールを決める"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.14"
+                    }
+                  }
+                },
+                {
+                  "id": "a1Jfi",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Medium",
+                  "width": 342,
+                  "height": 257,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v225a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-153a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        342,
+                        257
+                      ],
+                      "width": 342,
+                      "height": 257,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1571506562879-feb067e54235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 185,
+                      "width": 183
+                    },
+                    "FC9Ta": {
+                      "content": "20 カラムのグリッド"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.13"
+                    }
+                  }
+                },
+                {
+                  "id": "ToH5O",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Medium",
+                  "width": 342,
+                  "height": 257,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v225a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-153a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        342,
+                        257
+                      ],
+                      "width": 342,
+                      "height": 257,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1655388506739-08eb029df45c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 185,
+                      "width": 183
+                    },
+                    "FC9Ta": {
+                      "content": "ノッチ付きの画像"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.12"
+                    }
+                  }
+                },
+                {
+                  "id": "V75Kd",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Large",
+                  "width": 342,
+                  "height": 342,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v310a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-238a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        342,
+                        342
+                      ],
+                      "width": 342,
+                      "height": 342,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1748959503729-8dcb7abd7559?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 270,
+                      "width": 183
+                    },
+                    "FC9Ta": {
+                      "content": "和文の行間"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.11"
+                    }
+                  }
+                },
+                {
+                  "id": "HEtwX",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Small",
+                  "width": 342,
+                  "height": 257,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v225a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-129a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        342,
+                        257
+                      ],
+                      "width": 342,
+                      "height": 257,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1538645731800-4640c639bba7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 161,
+                      "width": 183
+                    },
+                    "FC9Ta": {
+                      "content": "デバイスフォントで組む"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.10"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "n5NhfJ",
+                  "name": "Post Card - No Image",
+                  "width": 342,
+                  "height": 257,
+                  "fill": "$color-accent-5",
+                  "cornerRadius": "$radius-medium",
+                  "layout": "vertical",
+                  "gap": "$spacing-20",
+                  "padding": "$spacing-40",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "S6NUc",
+                      "name": "Post Title",
+                      "fill": "$color-contrast",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "色を 6 つに絞る",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-family-noto-sans-jp",
+                      "fontSize": "$font-size-medium",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Kek9c",
+                      "name": "Post Date",
+                      "fill": "$color-accent-4",
+                      "content": "2026.10.09",
+                      "lineHeight": 1.875,
+                      "fontFamily": "$font-family-noto-sans-mono",
+                      "fontSize": "$font-size-small",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "id": "pyQMz",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Medium",
+                  "width": 342,
+                  "height": 257,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v225a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-64a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-129a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        342,
+                        257
+                      ],
+                      "width": 342,
+                      "height": 257,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1589178208772-6f239b7652e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 161,
+                      "width": 183
+                    },
+                    "FC9Ta": {
+                      "content": "Playground で開発する"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.08"
+                    }
+                  }
+                },
+                {
+                  "id": "e49jp",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Medium",
+                  "width": 342,
+                  "height": 257,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h310a16 16 0 0 1 16 16v225a16 16 0 0 1-16 16h-127a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-151a16 16 0 0 1-16-16v-153a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        342,
+                        257
+                      ],
+                      "width": 342,
+                      "height": 257,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1518218475781-e68795a570d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 185,
+                      "width": 183
+                    },
+                    "FC9Ta": {
+                      "content": "Theme Check を通す"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.07"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "H8hk6w",
+              "name": "Query Pagination",
+              "width": "fill_container",
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pPVAc",
+                  "name": "Previous",
+                  "fill": "$color-contrast",
+                  "content": "← 前へ",
+                  "lineHeight": 1.75,
+                  "fontFamily": "$font-family-noto-sans-jp",
+                  "fontSize": "$font-size-small",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "M4v5yf",
+                  "name": "Page Numbers",
+                  "gap": 4,
+                  "padding": [
+                    0,
+                    "$spacing-30"
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rBP71",
+                      "name": "Current Page",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "$color-accent-4",
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bTgw0",
+                          "name": "Number",
+                          "fill": "$color-base",
+                          "content": "1",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "K5rfVs",
+                      "name": "Page",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ThpOf",
+                          "name": "Number",
+                          "fill": "$color-contrast",
+                          "content": "2",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SWctJ",
+                      "name": "Page",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zLtId",
+                          "name": "Number",
+                          "fill": "$color-contrast",
+                          "content": "3",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "f4BhQM",
+                  "name": "Next",
+                  "fill": "$color-contrast",
+                  "content": "次へ →",
+                  "lineHeight": 1.75,
+                  "fontFamily": "$font-family-noto-sans-jp",
+                  "fontSize": "$font-size-small",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kmrDQ",
+          "type": "ref",
+          "ref": "f3DzIM",
+          "name": "Footer",
+          "width": "fill_container",
+          "padding": "$spacing-40"
+        },
+        {
+          "type": "frame",
+          "id": "wasKF",
+          "layoutPosition": "absolute",
+          "x": 24,
+          "y": 0,
+          "name": "Grid Overlay",
+          "enabled": false,
+          "width": 342,
+          "height": 3350,
+          "gap": "$spacing-40",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "x9yfS",
+              "name": "Col 1",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "q9RAG",
+              "name": "Col 2",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "yHtig",
+              "name": "Col 3",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "OIvaJ",
+              "name": "Col 4",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "J1Egio",
+              "name": "Col 5",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "pWeqA",
+              "name": "Col 6",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "MZyEi",
+      "x": 16760,
+      "y": 0,
+      "name": "Home - Tablet",
+      "clip": true,
+      "width": 782,
+      "fill": "$color-base",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "aRL4i",
+          "type": "ref",
+          "ref": "L6hjb",
+          "name": "Header",
+          "width": "fill_container",
+          "padding": "$spacing-40"
+        },
+        {
+          "type": "frame",
+          "id": "S2saG",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$spacing-60",
+          "padding": [
+            "$spacing-40",
+            "$spacing-40",
+            "$spacing-60",
+            "$spacing-40"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "DVYK7",
+              "name": "Post Template",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$spacing-40",
+              "children": [
+                {
+                  "id": "j0DnHp",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Large",
+                  "width": 734,
+                  "height": 413,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h702a16 16 0 0 1 16 16v381a16 16 0 0 1-16 16h-323a16 16 0 0 1-16-16v-88a16 16 0 0 0-16-16h-347a16 16 0 0 1-16-16v-261a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        734,
+                        413
+                      ],
+                      "width": 734,
+                      "height": 413,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1784397368039-b849693bfeaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 293,
+                      "width": 379
+                    },
+                    "FC9Ta": {
+                      "content": "ブロックテーマの余白を theme.json で設計するときに、最初に決めておきたい 3 つのスケールについて"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.16"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "g8IrN9",
+                  "name": "Tiles",
+                  "width": "fill_container",
+                  "gap": "$spacing-40",
+                  "children": [
+                    {
+                      "id": "M5bv3",
+                      "type": "ref",
+                      "ref": "v05kjC",
+                      "name": "Post Card - Small",
+                      "width": 355,
+                      "height": 355,
+                      "descendants": {
+                        "wZwCB": {
+                          "geometry": "M16 0h323a16 16 0 0 1 16 16v323a16 16 0 0 1-16 16h-70a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-221a16 16 0 0 1-16-16v-251a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            355,
+                            355
+                          ],
+                          "width": 355,
+                          "height": 355,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1607000975662-000e0b71b672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "vNPbE": {
+                          "x": 0,
+                          "y": 283,
+                          "width": 253
+                        },
+                        "FC9Ta": {
+                          "content": "積み木のように余白を重ねる"
+                        },
+                        "E1BZNk": {
+                          "content": "2026.10.15"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ttB9E",
+                      "type": "ref",
+                      "ref": "v05kjC",
+                      "name": "Post Card - Small",
+                      "width": 355,
+                      "height": 355,
+                      "descendants": {
+                        "wZwCB": {
+                          "geometry": "M16 0h323a16 16 0 0 1 16 16v323a16 16 0 0 1-16 16h-70a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-221a16 16 0 0 1-16-16v-251a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            355,
+                            355
+                          ],
+                          "width": 355,
+                          "height": 355,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1649843263763-c7a9e29d5ea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "vNPbE": {
+                          "x": 0,
+                          "y": 283,
+                          "width": 253
+                        },
+                        "FC9Ta": {
+                          "content": "角丸のスケールを決める"
+                        },
+                        "E1BZNk": {
+                          "content": "2026.10.14"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MR4NK",
+                  "name": "Tiles",
+                  "width": "fill_container",
+                  "gap": "$spacing-40",
+                  "children": [
+                    {
+                      "id": "jNNKo",
+                      "type": "ref",
+                      "ref": "v05kjC",
+                      "name": "Post Card - Medium",
+                      "width": 355,
+                      "height": 355,
+                      "descendants": {
+                        "wZwCB": {
+                          "geometry": "M16 0h323a16 16 0 0 1 16 16v323a16 16 0 0 1-16 16h-70a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-221a16 16 0 0 1-16-16v-251a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            355,
+                            355
+                          ],
+                          "width": 355,
+                          "height": 355,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1571506562879-feb067e54235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "vNPbE": {
+                          "x": 0,
+                          "y": 283,
+                          "width": 253
+                        },
+                        "FC9Ta": {
+                          "content": "20 カラムのグリッド"
+                        },
+                        "E1BZNk": {
+                          "content": "2026.10.13"
+                        }
+                      }
+                    },
+                    {
+                      "id": "VpbZh",
+                      "type": "ref",
+                      "ref": "v05kjC",
+                      "name": "Post Card - Medium",
+                      "width": 355,
+                      "height": 355,
+                      "descendants": {
+                        "wZwCB": {
+                          "geometry": "M16 0h323a16 16 0 0 1 16 16v323a16 16 0 0 1-16 16h-70a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-221a16 16 0 0 1-16-16v-251a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            355,
+                            355
+                          ],
+                          "width": 355,
+                          "height": 355,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1655388506739-08eb029df45c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "vNPbE": {
+                          "x": 0,
+                          "y": 283,
+                          "width": 253
+                        },
+                        "FC9Ta": {
+                          "content": "ノッチ付きの画像"
+                        },
+                        "E1BZNk": {
+                          "content": "2026.10.12"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "a2czG",
+                  "type": "ref",
+                  "ref": "v05kjC",
+                  "name": "Post Card - Large",
+                  "width": 734,
+                  "height": 413,
+                  "descendants": {
+                    "wZwCB": {
+                      "geometry": "M16 0h702a16 16 0 0 1 16 16v381a16 16 0 0 1-16 16h-323a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-347a16 16 0 0 1-16-16v-309a16 16 0 0 1 16-16z",
+                      "viewBox": [
+                        0,
+                        0,
+                        734,
+                        413
+                      ],
+                      "width": 734,
+                      "height": 413,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1748959503729-8dcb7abd7559?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "vNPbE": {
+                      "x": 0,
+                      "y": 341,
+                      "width": 379
+                    },
+                    "FC9Ta": {
+                      "content": "和文の行間"
+                    },
+                    "E1BZNk": {
+                      "content": "2026.10.11"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "u4iTgX",
+                  "name": "Tiles",
+                  "width": "fill_container",
+                  "gap": "$spacing-40",
+                  "children": [
+                    {
+                      "id": "VssNF",
+                      "type": "ref",
+                      "ref": "v05kjC",
+                      "name": "Post Card - Small",
+                      "width": 355,
+                      "height": 355,
+                      "descendants": {
+                        "wZwCB": {
+                          "geometry": "M16 0h323a16 16 0 0 1 16 16v323a16 16 0 0 1-16 16h-70a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-221a16 16 0 0 1-16-16v-251a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            355,
+                            355
+                          ],
+                          "width": 355,
+                          "height": 355,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1538645731800-4640c639bba7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "vNPbE": {
+                          "x": 0,
+                          "y": 283,
+                          "width": 253
+                        },
+                        "FC9Ta": {
+                          "content": "デバイスフォントで組む"
+                        },
+                        "E1BZNk": {
+                          "content": "2026.10.10"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JxmwL",
+                      "name": "Post Card - No Image",
+                      "width": 355,
+                      "height": 355,
+                      "fill": "$color-accent-5",
+                      "cornerRadius": "$radius-medium",
+                      "layout": "vertical",
+                      "gap": "$spacing-20",
+                      "padding": "$spacing-40",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "N2Ibtf",
+                          "name": "Post Title",
+                          "fill": "$color-contrast",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "色を 6 つに絞る",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$font-family-noto-sans-jp",
+                          "fontSize": "$font-size-medium",
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZLg1N",
+                          "name": "Post Date",
+                          "fill": "$color-accent-4",
+                          "content": "2026.10.09",
+                          "lineHeight": 1.875,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GXECz",
+                  "name": "Tiles",
+                  "width": "fill_container",
+                  "gap": "$spacing-40",
+                  "children": [
+                    {
+                      "id": "w2g6B",
+                      "type": "ref",
+                      "ref": "v05kjC",
+                      "name": "Post Card - Medium",
+                      "width": 355,
+                      "height": 355,
+                      "descendants": {
+                        "wZwCB": {
+                          "geometry": "M16 0h323a16 16 0 0 1 16 16v323a16 16 0 0 1-16 16h-70a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-221a16 16 0 0 1-16-16v-251a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            355,
+                            355
+                          ],
+                          "width": 355,
+                          "height": 355,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1589178208772-6f239b7652e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "vNPbE": {
+                          "x": 0,
+                          "y": 283,
+                          "width": 253
+                        },
+                        "FC9Ta": {
+                          "content": "Playground で開発する"
+                        },
+                        "E1BZNk": {
+                          "content": "2026.10.08"
+                        }
+                      }
+                    },
+                    {
+                      "id": "z3Aqt",
+                      "type": "ref",
+                      "ref": "v05kjC",
+                      "name": "Post Card - Medium",
+                      "width": 355,
+                      "height": 355,
+                      "descendants": {
+                        "wZwCB": {
+                          "geometry": "M16 0h323a16 16 0 0 1 16 16v323a16 16 0 0 1-16 16h-70a16 16 0 0 1-16-16v-40a16 16 0 0 0-16-16h-221a16 16 0 0 1-16-16v-251a16 16 0 0 1 16-16z",
+                          "viewBox": [
+                            0,
+                            0,
+                            355,
+                            355
+                          ],
+                          "width": 355,
+                          "height": 355,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1518218475781-e68795a570d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+                            "mode": "cover"
+                          }
+                        },
+                        "vNPbE": {
+                          "x": 0,
+                          "y": 283,
+                          "width": 253
+                        },
+                        "FC9Ta": {
+                          "content": "Theme Check を通す"
+                        },
+                        "E1BZNk": {
+                          "content": "2026.10.07"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rvQHt",
+              "name": "Query Pagination",
+              "width": "fill_container",
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "DngLG",
+                  "name": "Previous",
+                  "fill": "$color-contrast",
+                  "content": "← 前へ",
+                  "lineHeight": 1.75,
+                  "fontFamily": "$font-family-noto-sans-jp",
+                  "fontSize": "$font-size-small",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "YlQ79",
+                  "name": "Page Numbers",
+                  "gap": 4,
+                  "padding": [
+                    0,
+                    "$spacing-30"
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "X9JXo",
+                      "name": "Current Page",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "$color-accent-4",
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lCuOU",
+                          "name": "Number",
+                          "fill": "$color-base",
+                          "content": "1",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "z1dg6a",
+                      "name": "Page",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "d9ihqQ",
+                          "name": "Number",
+                          "fill": "$color-contrast",
+                          "content": "2",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QfiyE",
+                      "name": "Page",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": "$radius-full",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jTYC1",
+                          "name": "Number",
+                          "fill": "$color-contrast",
+                          "content": "3",
+                          "lineHeight": 1.75,
+                          "fontFamily": "$font-family-noto-sans-mono",
+                          "fontSize": "$font-size-small",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "kssSU",
+                  "name": "Next",
+                  "fill": "$color-contrast",
+                  "content": "次へ →",
+                  "lineHeight": 1.75,
+                  "fontFamily": "$font-family-noto-sans-jp",
+                  "fontSize": "$font-size-small",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "WkCQV",
+          "type": "ref",
+          "ref": "f3DzIM",
+          "name": "Footer",
+          "width": "fill_container",
+          "padding": "$spacing-40"
+        },
+        {
+          "type": "frame",
+          "id": "y4Goox",
+          "layoutPosition": "absolute",
+          "x": 24,
+          "y": 0,
+          "name": "Grid Overlay",
+          "width": 734,
+          "height": 2760,
+          "gap": "$spacing-40",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "PUPzq",
+              "name": "Col 1",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "KjeDy",
+              "name": "Col 2",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "ncRu4",
+              "name": "Col 3",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "xMv1L",
+              "name": "Col 4",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "bECHT",
+              "name": "Col 5",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "q4KH5",
+              "name": "Col 6",
+              "fill": "#8e51ff1f",
+              "width": "fill_container",
+              "height": "fill_container"
             }
           ]
         }

@@ -2,7 +2,7 @@
 /**
  * Title: Index
  * Slug: tsumiki/hidden-index
- * Template Types: index, home
+ * Template Types: index
  * Inserter: no
  *
  * @package Tsumiki
