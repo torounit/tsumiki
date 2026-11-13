@@ -405,10 +405,14 @@
 			"core/media-text": {
 				"css": "& .wp-block-media-text__media img{border-radius:var(--wp--preset--border-radius--medium)}& .wp-block-media-text__media video{border-radius:var(--wp--preset--border-radius--medium)}"
 			},
+			"core/navigation": {
+				"css": "& .wp-block-navigation__responsive-container-open{justify-content:center;align-items:center;width:36px;height:36px}"
+			},
 			"core/navigation-overlay-close": {
 				"border": {
 					"radius": "var:preset|border-radius|full"
-				}
+				},
+				"css": "width:36px;height:36px;"
 			},
 			"core/post-date": {
 				"color": {
@@ -517,6 +521,12 @@
 					}
 				}
 			},
+			"core/social-links": {
+				"css": "& .wp-social-link .wp-block-social-link-anchor{padding:10px}",
+				"spacing": {
+					"blockGap": "var:preset|spacing|20"
+				}
+			},
 			"core/tab-list": {
 				"border": {
 					"radius": "var:preset|border-radius|full"
@@ -537,6 +547,11 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay",
+			"title": "Navigation Overlay"
 		}
 	]
 }
